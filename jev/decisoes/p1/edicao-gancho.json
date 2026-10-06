@@ -1,0 +1,23 @@
+{
+  "id": "edicao-gancho",
+  "version": "1",
+  "situacao": "futura: fica para o próximo ciclo (P1); o scripts/jev_decidir.py recusa este id até ela voltar para jev/decisoes/",
+  "titulo": "Escolher o gancho dos primeiros 3 segundos",
+  "quando_usar": "No passo 4 (direção), quando a transcrição tem mais de um candidato a gancho (frase que pode abrir o vídeo, mesmo que dita no meio).",
+  "fontes": [
+    "SKILL.md, passo 4 (o gancho abre com a pessoa na câmera)",
+    "briefing.md do vídeo (objetivo e público)"
+  ],
+  "inputs": {
+    "objetivo": "Objetivo e público do vídeo.",
+    "ganchos": "Lista de 2 a 12 frases candidatas a gancho, como foram ditas."
+  },
+  "state": "Regra de gancho: a melhor abertura cria tensão ou curiosidade nos primeiros 3 segundos, fala com o público certo, e é entendida sem contexto anterior. Eliminatório: promessa de resultado garantido, frase que depende de algo dito antes.\n\nObjetivo e público: {{objetivo}}. Candidatos: {{ganchos}}.",
+  "questions": {
+    "gancho": {
+      "type": "choice",
+      "instructions": "Qual candidato deve abrir o vídeo?",
+      "criteria": "@ganchos"
+    }
+  }
+}

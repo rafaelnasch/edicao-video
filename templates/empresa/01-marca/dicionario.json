@@ -1,0 +1,5 @@
+{
+ "_leia": "Grafias da empresa na legenda: nomes de empresa, produto, pessoas e jargão do nicho. Somado ao dicionário da skill pelo revisar_transcricao.py (--dicionario 01-marca/dicionario.json) e pelo build_full.py com --marca. Cada termo: grafia (como aparece na tela), variantes (como a transcrição costuma escrever) e, opcional, contexto (palavras que precisam aparecer perto, para variantes que também são palavra comum).",
+ "versao": 1,
+ "termos": []
+}

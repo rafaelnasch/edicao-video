@@ -1,0 +1,63 @@
+{
+ "1": {
+  "type": "camera",
+  "move": "punch",
+  "keyword": "MOSTRAR",
+  "keywords": {
+   "text": "Hoje",
+   "punch": "mostrar",
+   "keyword": "mostrar"
+  },
+  "enfase": "mostrar"
+ },
+ "2": {
+  "type": "image",
+  "image": "teste1",
+  "text": [
+   "VÍDEO CURTO GANHA"
+  ],
+  "keywords": {
+   "text": "vídeo"
+  }
+ },
+ "3": {
+  "type": "radar",
+  "rotulo": "Capítulo 1",
+  "titulo": "CORTES IMAGENS",
+  "foco": "imagens",
+  "aviso": "Gargalo encontrado",
+  "valor": "10,3%"
+ },
+ "4": {
+  "type": "image",
+  "image": "teste3",
+  "text": [
+   "MEXEM E UMA"
+  ],
+  "keywords": {
+   "text": "mexem"
+  }
+ },
+ "5": {
+  "type": "camera",
+  "move": "punch",
+  "keyword": "PALAVRA",
+  "keywords": {
+   "text": "cada",
+   "punch": "palavra",
+   "keyword": "palavra"
+  }
+ },
+ "video": {
+  "gancho": {
+   "texto": "O gargalo está aqui",
+   "foco": "gargalo"
+  },
+  "tarja": {
+   "nome": "Nome Exemplo",
+   "papel": "Cargo Exemplo",
+   "de": 5.58,
+   "ate": 8.58
+  }
+ }
+}

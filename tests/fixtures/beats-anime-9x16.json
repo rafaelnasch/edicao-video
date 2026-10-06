@@ -1,0 +1,256 @@
+{
+ "schema": "edicao-video-padrao/beats@1",
+ "video": "regressao",
+ "fonte": "@FIXTURES@/fala-9x16.mp4",
+ "transcricao": "@FIXTURES@/transcript.json",
+ "duracaoFala1x": 9.1,
+ "velocidadeFinal": 1.3,
+ "duracaoFinal": 7.0,
+ "canvas": {
+  "w": 1080,
+  "h": 1920
+ },
+ "zonaSegura": {
+  "texto": {
+   "x": 120,
+   "y": 320,
+   "w": 840,
+   "h": 1080
+  },
+  "proibido": [
+   {
+    "nome": "topo UI",
+    "y0": 0,
+    "y1": 300
+   },
+   {
+    "nome": "rodapé UI e legenda",
+    "y0": 1450,
+    "y1": 1920
+   },
+   {
+    "nome": "coluna botões",
+    "x0": 960,
+    "x1": 1080
+   }
+  ],
+  "legenda": {
+   "x": 120,
+   "y": 1310,
+   "w": 840,
+   "h": 130,
+   "align": "center",
+   "maxLinhas": 2
+  }
+ },
+ "paleta": {
+  "navy": "#0A1428",
+  "coral": "#E63946",
+  "cyan": "#06B6D4",
+  "dourado": "pontual"
+ },
+ "regras": [
+  "texto centralizado em x 120..960, y 320..1400",
+  "legenda karaokê y 1310..1440",
+  "sem gradiente",
+  "números só os citados na fala",
+  "logos só de assets oficiais",
+  "tempos em segundos da fala 1x; startFinal/endFinal já divididos pela velocidade"
+ ],
+ "resumo": {
+  "beats": 5,
+  "porTipo": {
+   "camera": 2,
+   "imagem": 2,
+   "animacao": 1
+  },
+  "mediaFinalSeg": 1.4,
+  "maiorFinalSeg": 1.554,
+  "menorFinalSeg": 1.231
+ },
+ "validacao": {
+  "erros": [],
+  "avisos": []
+ },
+ "beats": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 1.76,
+   "duracao1x": 1.76,
+   "startFinal": 0.0,
+   "endFinal": 1.354,
+   "duracaoFinal": 1.354,
+   "tipo": "camera",
+   "fala": "Hoje eu vou mostrar como um",
+   "animacao": "teste de fumaça",
+   "textoTela": "HOJE EU VOU",
+   "posicaoTexto": {
+    "x": 120,
+    "y": 1210,
+    "w": 840,
+    "h": 90,
+    "align": "center",
+    "maxLinhas": 1,
+    "nota": "abaixo do queixo; medir o rosto (y 340..1170 no vídeo de referência)"
+   },
+   "sfx": {
+    "nome": "whoosh",
+    "arquivo": "whoosh-short",
+    "noInicio": true
+   },
+   "transicaoEntrada": "corte seco",
+   "camera": {
+    "movimento": "punch",
+    "zoomDe": 1.0,
+    "zoomPara": 1.12,
+    "ancora": {
+     "x": 540,
+     "y": 620
+    }
+   }
+  },
+  {
+   "id": 2,
+   "start": 1.76,
+   "end": 3.58,
+   "duracao1x": 1.82,
+   "startFinal": 1.354,
+   "endFinal": 2.754,
+   "duracaoFinal": 1.4,
+   "tipo": "imagem",
+   "fala": "vídeo curto ganha ritmo com",
+   "animacao": "teste de fumaça",
+   "textoTela": "VÍDEO CURTO GANHA",
+   "posicaoTexto": {
+    "x": 120,
+    "y": 340,
+    "w": 840,
+    "h": 220,
+    "align": "center",
+    "maxLinhas": 2,
+    "nota": "terço superior calmo por prompt; se a cabeça estiver no alto, faixa baixa y 1100..1300"
+   },
+   "sfx": {
+    "nome": "whoosh",
+    "arquivo": "whoosh-short",
+    "noInicio": true
+   },
+   "transicaoEntrada": "whip pan horizontal",
+   "imagem": {
+    "arquivo": "@FIXTURES@/imagens/quadro-a.png",
+    "existe": true,
+    "tratamento": {
+     "escala": [
+      1.0,
+      1.05
+     ],
+     "cobre": "tela cheia 1080x1920"
+    }
+   }
+  },
+  {
+   "id": 3,
+   "start": 3.58,
+   "end": 5.48,
+   "duracao1x": 1.9,
+   "startFinal": 2.754,
+   "endFinal": 4.215,
+   "duracaoFinal": 1.462,
+   "tipo": "animacao",
+   "fala": "cortes secos, imagens que se",
+   "animacao": "teste de fumaça",
+   "textoTela": "CORTES IMAGENS",
+   "posicaoTexto": {
+    "x": 120,
+    "y": 320,
+    "w": 840,
+    "h": 970,
+    "align": "center",
+    "nota": "composição centralizada; nada abaixo de y 1290 (legenda)"
+   },
+   "sfx": {
+    "nome": "pop",
+    "arquivo": "pop",
+    "noInicio": true
+   },
+   "transicaoEntrada": "máscara circular"
+  },
+  {
+   "id": 4,
+   "start": 5.48,
+   "end": 7.5,
+   "duracao1x": 2.02,
+   "startFinal": 4.215,
+   "endFinal": 5.769,
+   "duracaoFinal": 1.554,
+   "tipo": "imagem",
+   "fala": "mexem e uma legenda que acompanha",
+   "animacao": "teste de fumaça",
+   "textoTela": "MEXEM E UMA",
+   "posicaoTexto": {
+    "x": 120,
+    "y": 340,
+    "w": 840,
+    "h": 220,
+    "align": "center",
+    "maxLinhas": 2,
+    "nota": "terço superior calmo por prompt; se a cabeça estiver no alto, faixa baixa y 1100..1300"
+   },
+   "sfx": {
+    "nome": "whoosh",
+    "arquivo": "whoosh-short",
+    "noInicio": true
+   },
+   "transicaoEntrada": "zoom through",
+   "imagem": {
+    "arquivo": "@FIXTURES@/imagens/quadro-b.png",
+    "existe": true,
+    "tratamento": {
+     "escala": [
+      1.0,
+      1.05
+     ],
+     "cobre": "tela cheia 1080x1920"
+    }
+   }
+  },
+  {
+   "id": 5,
+   "start": 7.5,
+   "end": 9.1,
+   "duracao1x": 1.6,
+   "startFinal": 5.769,
+   "endFinal": 7.0,
+   "duracaoFinal": 1.231,
+   "tipo": "camera",
+   "fala": "cada palavra até o final.",
+   "animacao": "teste de fumaça",
+   "textoTela": "CADA PALAVRA ATÉ",
+   "posicaoTexto": {
+    "x": 120,
+    "y": 1210,
+    "w": 840,
+    "h": 90,
+    "align": "center",
+    "maxLinhas": 1,
+    "nota": "abaixo do queixo; medir o rosto (y 340..1170 no vídeo de referência)"
+   },
+   "sfx": {
+    "nome": "pop",
+    "arquivo": "pop",
+    "noInicio": true
+   },
+   "transicaoEntrada": "corte seco com flash branco de 2 frames",
+   "camera": {
+    "movimento": "punch",
+    "zoomDe": 1.0,
+    "zoomPara": 1.12,
+    "ancora": {
+     "x": 540,
+     "y": 620
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.8,
+  "tipo": "camera",
+  "texto": "PERDE HORAS",
+  "sfx": "nenhum",
+  "transicao": "corte seco",
+  "descricao": "cena camera",
+  "detalhe": {
+   "motion": "punch",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  }
+ },
+ {
+  "start": 2.8,
+  "end": 4.81,
+  "tipo": "animacao",
+  "texto": "TAREFAS QUE SE REPETEM",
+  "sfx": "whoosh",
+  "transicao": "whip pan horizontal",
+  "descricao": "cena title"
+ },
+ {
+  "start": 4.81,
+  "end": 7.1,
+  "tipo": "animacao",
+  "texto": "12 HORAS POR MÊS",
+  "sfx": "pop",
+  "transicao": "zoom through",
+  "descricao": "cena counter"
+ },
+ {
+  "start": 7.1,
+  "end": 9.09,
+  "tipo": "imagem",
+  "texto": "TIME LIVRE",
+  "sfx": "whoosh",
+  "transicao": "máscara circular",
+  "descricao": "cena image",
+  "detalhe": "quadro-a.png"
+ },
+ {
+  "start": 9.09,
+  "end": 11.63,
+  "tipo": "animacao",
+  "texto": "AGENDA RELATÓRIOS MENSAGENS",
+  "sfx": "pop",
+  "transicao": "máscara horizontal",
+  "descricao": "cena list"
+ },
+ {
+  "start": 11.63,
+  "end": 14.12,
+  "tipo": "animacao",
+  "texto": "PLANILHA ALIMENTA PAINEL",
+  "sfx": "whoosh",
+  "transicao": "slide lateral",
+  "descricao": "cena flow"
+ },
+ {
+  "start": 14.12,
+  "end": 16.25,
+  "tipo": "camera",
+  "texto": "ACONTECE SOZINHO",
+  "sfx": "nenhum",
+  "transicao": "corte seco",
+  "descricao": "cena camera",
+  "detalhe": {
+   "motion": "push",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  }
+ },
+ {
+  "start": 16.25,
+  "end": 18.2,
+  "tipo": "animacao",
+  "texto": "MARÇO NOVO CICLO",
+  "sfx": "pop",
+  "transicao": "corte seco com flash branco de 2 frames",
+  "descricao": "cena calendar"
+ },
+ {
+  "start": 18.2,
+  "end": 20.65,
+  "tipo": "animacao",
+  "texto": "R$ 49 POR MÊS",
+  "sfx": "pop",
+  "transicao": "glitch",
+  "descricao": "cena card"
+ },
+ {
+  "start": 20.65,
+  "end": 22.52,
+  "tipo": "imagem",
+  "texto": "ROTINA MAIS LEVE",
+  "sfx": "whoosh",
+  "transicao": "fatias",
+  "descricao": "cena image",
+  "detalhe": "quadro-b.png"
+ },
+ {
+  "start": 22.52,
+  "end": 24.56,
+  "tipo": "animacao",
+  "texto": "24 HORAS POR DIA",
+  "sfx": "whoosh",
+  "transicao": "whip pan vertical",
+  "descricao": "cena clock"
+ },
+ {
+  "start": 24.56,
+  "end": 26.78,
+  "tipo": "animacao",
+  "texto": "LISTA VIROU PAINEL",
+  "sfx": "pop",
+  "transicao": "máscara vertical",
+  "descricao": "cena compare"
+ },
+ {
+  "start": 26.78,
+  "end": 29.09,
+  "tipo": "camera",
+  "texto": "MUDA O JEITO",
+  "sfx": "nenhum",
+  "transicao": "corte seco",
+  "descricao": "cena camera",
+  "detalhe": {
+   "motion": "pull",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  }
+ },
+ {
+  "start": 29.09,
+  "end": 31.83,
+  "tipo": "animacao",
+  "texto": "MANHÃ E TARDE",
+  "sfx": "whoosh",
+  "transicao": "slide vertical curto",
+  "descricao": "cena duo"
+ },
+ {
+  "start": 31.83,
+  "end": 33.75,
+  "tipo": "animacao",
+  "texto": "SUA MARCA",
+  "sfx": "pop",
+  "transicao": "zoom through (entra pelo centro)",
+  "descricao": "cena logo"
+ },
+ {
+  "start": 33.75,
+  "end": 35.76,
+  "tipo": "imagem",
+  "texto": "IDENTIDADE DE SEMPRE",
+  "sfx": "whoosh",
+  "transicao": "whip pan com motion blur",
+  "descricao": "cena image",
+  "detalhe": "quadro-a.png"
+ },
+ {
+  "start": 35.76,
+  "end": 37.71,
+  "tipo": "animacao",
+  "texto": "A MESMA BASE",
+  "sfx": "pop",
+  "transicao": "máscara circular abrindo do centro",
+  "descricao": "cena morph"
+ },
+ {
+  "start": 37.71,
+  "end": 39.81,
+  "tipo": "animacao",
+  "texto": "ASSISTENTE DISPONÍVEL",
+  "sfx": "whoosh",
+  "transicao": "flash branco curto + shake de 4 frames",
+  "descricao": "cena orbit"
+ },
+ {
+  "start": 39.81,
+  "end": 41.85,
+  "tipo": "camera",
+  "texto": "CADA ETAPA",
+  "sfx": "nenhum",
+  "transicao": "corte seco",
+  "descricao": "cena camera",
+  "detalhe": {
+   "motion": "punch",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  }
+ },
+ {
+  "start": 41.85,
+  "end": 43.86,
+  "tipo": "animacao",
+  "texto": "INSTALA UMA VEZ",
+  "sfx": "pop",
+  "transicao": "máscara vertical de baixo para cima",
+  "descricao": "cena progress"
+ },
+ {
+  "start": 43.86,
+  "end": 45.91,
+  "tipo": "animacao",
+  "texto": "SEMANA LIVRE",
+  "sfx": "whoosh",
+  "transicao": "slide lateral curto",
+  "descricao": "cena strike"
+ },
+ {
+  "start": 45.91,
+  "end": 48.17,
+  "tipo": "imagem",
+  "texto": "RESULTADO NO RELATÓRIO",
+  "sfx": "nenhum",
+  "transicao": "corte seco",
+  "descricao": "cena image",
+  "detalhe": "quadro-b.png"
+ },
+ {
+  "start": 48.17,
+  "end": 50.58,
+  "tipo": "animacao",
+  "texto": "SITE VÍDEO MENSAGEM",
+  "sfx": "pop",
+  "transicao": "fatias",
+  "descricao": "cena tiles"
+ },
+ {
+  "start": 50.58,
+  "end": 52.86,
+  "tipo": "animacao",
+  "texto": "PRIMEIRA TAREFA HOJE",
+  "sfx": "click",
+  "transicao": "glitch",
+  "descricao": "cena typewriter"
+ },
+ {
+  "start": 52.86,
+  "end": 54.27,
+  "tipo": "camera",
+  "texto": "COMECE AGORA",
+  "sfx": "nenhum",
+  "transicao": "corte seco",
+  "descricao": "cena camera",
+  "detalhe": {
+   "motion": "punch",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  }
+ }
+]

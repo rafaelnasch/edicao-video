@@ -1,0 +1,4 @@
+{"versao":1,"tipo":"empresa","slug":"{{slug}}","nome":"{{nome}}","drive_folder_id":"{{drive_folder_id}}",
+ "responsavel_aprovacao":"{{responsavel_json}}","idioma":"{{idioma}}",
+ "autorizacoes":{"enviar_referencias_para_gerar_imagem":false,"fotos_de_pessoas_em_imagem_gerada":false},
+ "imagem":{"fornecedor":"nenhuma"},"jev":"auto","criado":"{{hoje}}"}

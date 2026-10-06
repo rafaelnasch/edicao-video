@@ -1,0 +1,37 @@
+{
+  "id": "edicao-claim-sensivel",
+  "version": "1",
+  "titulo": "Conferir se um texto na tela é afirmação arriscada para o nicho",
+  "quando_usar": "No passo 4 (direção) e no QA, para cada texto de tela com promessa, número de resultado, comparação ou termo técnico em nicho regulado (advocacia, saúde, estética, finanças, educação). O texto é curto (até 5 palavras) e não traz nome. A resposta nunca dispensa o OK do cliente: texto de tela sensível sempre vai para o relatório.",
+  "fontes": [
+    "01-marca/marca.md da empresa, seção Proibido (restrições do conselho de classe registradas pela empresa)",
+    "briefing.md do vídeo, seção Oferta (termos proibidos)",
+    "Regras de anúncio das plataformas: promessa de ganho garantido, cura e antes e depois derrubam a veiculação"
+  ],
+  "inputs": {
+    "texto": "Texto que vai aparecer na tela.",
+    "frase": "Frase falada no mesmo beat.",
+    "restricoes": "Restrições do nicho e termos proibidos, resumidos de marca.md e do briefing (ex.: conselho proíbe promessa de resultado e antes e depois)."
+  },
+  "state": "Regra: texto de tela não promete resultado garantido, não usa antes e depois proibido, não cita cura, não compara com concorrente nominalmente e respeita as restrições do nicho. O que é aceitável dito com contexto pode virar risco quando isolado na tela.\n\nTexto na tela: {{texto}}. Frase falada: {{frase}}. Restrições do nicho: {{restricoes}}.",
+  "questions": {
+    "risco": {
+      "type": "noul",
+      "instructions": "O texto na tela, isolado, viola alguma restrição descrita?",
+      "criteria": {
+        "true": "Viola uma restrição.",
+        "false": "Não viola."
+      }
+    },
+    "acao": {
+      "type": "choice",
+      "instructions": "O que fazer com o texto?",
+      "criteria": {
+        "manter": "Pode ir para a tela.",
+        "suavizar": "Reescrever sem a promessa ou o termo proibido.",
+        "remover": "Tirar o texto; a fala basta.",
+        "nao_da": "Falta contexto para decidir."
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "edicao-recurso-do-cliente",
+  "version": "1",
+  "situacao": "futura: fica para o próximo ciclo (P1); o scripts/jev_decidir.py recusa este id até ela voltar para jev/decisoes/",
+  "titulo": "Escolher qual recurso visual do cliente entra num beat",
+  "quando_usar": "Depois de decidir que o beat usa recurso do cliente. A lista vem de 2-recursos/ e do 04-acervo/MAPA.md (uma linha de descrição por arquivo, sem nome de arquivo com dado pessoal). 'nenhum' leva o beat de volta para imagem gerada ou animação.",
+  "fontes": [
+    "2-recursos/ do vídeo e 04-acervo/MAPA.md da empresa",
+    "01-marca/marca.md (uso permitido de logo e foto)"
+  ],
+  "inputs": {
+    "frase": "Frase falada no beat.",
+    "candidatos": "Lista de 2 a 12 recursos do cliente, cada um com uma linha do que mostra e restrição de uso."
+  },
+  "state": "Escolha o recurso que mostra literalmente o que a frase diz. Eliminatório: recurso marcado como uso restrito, recurso com pessoa sem autorização registrada, logo em versão que a marca proíbe.\n\nFrase: {{frase}}. Recursos candidatos: {{candidatos}}.",
+  "questions": {
+    "recurso": {
+      "type": "choice",
+      "instructions": "Qual recurso candidato mostra melhor o que a frase diz, sem violar restrição de uso?",
+      "criteria": "@candidatos"
+    }
+  }
+}

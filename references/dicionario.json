@@ -1,0 +1,14 @@
+{
+ "_leia": "Dicionário de grafias da legenda, aplicado por scripts/revisar_transcricao.py ao transcript-reviewed.json. 'grafia' é como a palavra aparece na tela; 'variantes' é como o whisper costuma escrever (comparação sem acento, sem maiúscula e sem pontuação, juntando até 3 palavras seguidas). 'contexto' (opcional) exige que uma das palavras apareça até 6 palavras antes ou depois, para variantes que também são palavra comum. Aqui ficam só termos técnicos neutros. Nomes de empresa, produto e jargão de nicho vão para o 01-marca/dicionario.json de cada empresa, passado com --dicionario (repetível); o último que define a mesma variante vence.",
+ "versao": 1,
+ "termos": [
+  {"grafia": "SOP", "variantes": ["sop", "s o p", "esse o pe"]},
+  {"grafia": "follow-up", "variantes": ["followup", "follow up", "folou ap", "folow up"]},
+  {"grafia": "CRM", "variantes": ["crm", "c r m", "ce erre eme"]},
+  {"grafia": "IA", "variantes": ["i a", "ia"], "contexto": ["inteligência", "inteligencia", "artificial", "agente", "agentes", "ferramenta", "ferramentas", "prompt", "modelo"]},
+  {"grafia": "WhatsApp", "variantes": ["whatsapp", "whats app", "zap zap", "uatsap"]},
+  {"grafia": "Instagram", "variantes": ["instagram", "insta gram"]},
+  {"grafia": "ROI", "variantes": ["roi", "r o i", "erre o i"]}
+ ],
+ "numeros": {"_leia": "Número decimal com ponto e 1 ou 2 casas vira vírgula (2.5 -> 2,5; 0.75 -> 0,75). Milhar com ponto (10.000) fica.", "decimal_virgula": true}
+}

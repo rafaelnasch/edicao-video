@@ -1,0 +1,7 @@
+/* Tema neon-noir-vidro: Chakra Petch local (SIL OFL 1.1, licença em ../fonts/). Nada de CDN.
+   As famílias Brico e Mono do motor passam a apontar para a Chakra Petch dentro deste tema (a regra declarada depois vence),
+   então toda cena, contador e rótulo herdado do motor sai na fonte do tema. */
+@font-face{font-family:"Chakra";src:url("../fonts/ChakraPetch-Bold.ttf");font-weight:700;font-display:block}
+@font-face{font-family:"ChakraSemi";src:url("../fonts/ChakraPetch-SemiBold.ttf");font-weight:600;font-display:block}
+@font-face{font-family:Brico;src:url("../fonts/ChakraPetch-Bold.ttf");font-weight:200 800;font-stretch:75% 100%;font-display:block}
+@font-face{font-family:Mono;src:url("../fonts/ChakraPetch-SemiBold.ttf");font-weight:700;font-display:block}

@@ -1,0 +1,46 @@
+{
+  "id": "edicao-ritmo-e-velocidade",
+  "version": "1",
+  "titulo": "Definir densidade de elementos e se o vídeo final acelera para 1,3x",
+  "quando_usar": "No passo 3 (ritmo), depois da fala limpa e do taxa_fala.py, quando o resultado cair na faixa ambígua (6,2 a 6,8 sílabas por segundo) ou quando o perfil do destino não estiver fixado. Mande os números como texto com unidade.",
+  "fontes": [
+    "scripts/taxa_fala.py (limites de 6,2 e 6,8 sílabas por segundo)",
+    "scripts/ritmo.py (modo sóbrio para advocacia e saúde)",
+    "references/perfis.json (perfil do destino e do nicho)",
+    "briefing.md do vídeo (destino e objetivo)"
+  ],
+  "inputs": {
+    "taxa_fala": "Resultado do taxa_fala.py em texto, ex.: 'seis vírgula cinco sílabas por segundo de voz; fala já rápida'.",
+    "nicho": "Nicho do cliente e se é regulado (conselho de classe, saúde, finanças).",
+    "plataforma": "Plataforma e objetivo do vídeo.",
+    "tom_marca": "Tom de voz de marca.md em uma linha."
+  },
+  "state": "Regra de ritmo da skill. Padrão: elemento visual novo a cada 2 segundos ou menos e final acelerado 1,3x quando a fala está em até 6,2 sílabas por segundo; acima de 6,8 não acelera. Ritmo moderado (novo elemento a cada 3 segundos) cabe em aula longa, YouTube horizontal ou marca acolhedora. Modo sóbrio (sem tirar frase recomeçada, sem efeitos lúdicos) é obrigatório em advocacia e saúde e recomendado em finanças.\n\nTaxa de fala: {{taxa_fala}}. Nicho: {{nicho}}. Plataforma e objetivo: {{plataforma}}. Tom da marca: {{tom_marca}}.",
+  "questions": {
+    "densidade": {
+      "type": "choice",
+      "instructions": "Qual densidade de elementos visuais a regra indica para este vídeo?",
+      "criteria": {
+        "denso_2s": "Elemento novo a cada 2 segundos ou menos (padrão para vídeo curto vertical).",
+        "moderado_3s": "Elemento novo a cada 3 segundos (aula, horizontal longo, marca acolhedora)."
+      }
+    },
+    "velocidade": {
+      "type": "choice",
+      "instructions": "O vídeo final deve ser acelerado para 1,3x?",
+      "criteria": {
+        "acelerar_1_3": "A fala aguenta 1,3x sem perder clareza.",
+        "manter_1_0": "A fala já é rápida ou o nicho pede calma: manter 1,0x.",
+        "nao_da": "Os números enviados não bastam para decidir."
+      }
+    },
+    "modo_sobrio": {
+      "type": "noul",
+      "instructions": "O nicho exige modo sóbrio?",
+      "criteria": {
+        "true": "Nicho regulado ou marca que pede sobriedade.",
+        "false": "Sem exigência de sobriedade."
+      }
+    }
+  }
+}

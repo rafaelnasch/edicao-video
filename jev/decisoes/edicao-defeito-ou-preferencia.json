@@ -1,0 +1,37 @@
+{
+  "id": "edicao-defeito-ou-preferencia",
+  "version": "1",
+  "titulo": "Classificar um pedido de ajuste do cliente: defeito, preferência de marca ou pedido novo",
+  "quando_usar": "No passo 9 (revisão), para cada comentário do cliente sobre uma versão entregue. O agente resume cada comentário sem nome. Preferência de marca estável vai para 02-padroes/preferencias.md, depois do OK do cliente, e passa a valer nos próximos vídeos; defeito volta para o QA da skill.",
+  "fontes": [
+    "decisoes.md do vídeo e 02-padroes/preferencias.md da empresa",
+    "SKILL.md, passo 7 (QA), e scripts/qa.py"
+  ],
+  "inputs": {
+    "comentario": "Comentário do cliente resumido.",
+    "regra": "Regra da skill ou de marca.md mais próxima do comentário, ou 'nenhuma'.",
+    "historico": "Preferências já registradas que tocam o assunto, ou 'nenhuma'."
+  },
+  "state": "Definições: defeito técnico é quebra de regra da skill (legenda fora de sincronia, corte com palavra comida, texto fora da zona segura, imagem com letra). Preferência de marca é gosto estável do cliente que deve valer em todo vídeo (cor, fonte, tom, efeito que ele não quer). Preferência pontual vale só para este vídeo. Pedido novo é trabalho fora do que foi combinado.\n\nComentário: {{comentario}}. Regra relacionada: {{regra}}. Preferências já registradas: {{historico}}.",
+  "questions": {
+    "tipo": {
+      "type": "choice",
+      "instructions": "Como classificar o comentário?",
+      "criteria": {
+        "defeito_tecnico": "Quebra de regra da skill.",
+        "preferencia_marca": "Gosto estável, vale para todos os vídeos.",
+        "preferencia_pontual": "Vale só neste vídeo.",
+        "pedido_novo": "Fora do combinado.",
+        "nao_da": "Comentário vago demais."
+      }
+    },
+    "registrar": {
+      "type": "noul",
+      "instructions": "O comentário deve virar regra permanente em preferencias.md?",
+      "criteria": {
+        "true": "Sim, é estável e geral.",
+        "false": "Não, é pontual ou defeito."
+      }
+    }
+  }
+}

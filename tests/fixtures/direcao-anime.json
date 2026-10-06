@@ -1,0 +1,69 @@
+{
+ "1": {
+  "type": "camera",
+  "move": "punch",
+  "keyword": "MOSTRAR",
+  "keywords": {
+   "text": "Hoje",
+   "punch": "mostrar",
+   "keyword": "mostrar"
+  }
+ },
+ "2": {
+  "type": "image",
+  "image": "teste1",
+  "text": [
+   "VÍDEO CURTO GANHA"
+  ],
+  "keywords": {
+   "text": "vídeo"
+  }
+ },
+ "3": {
+  "type": "title",
+  "bg": "sunburst",
+  "lines": [
+   {
+    "text": "CORTES",
+    "cue": "l1",
+    "y": 760,
+    "size": 170,
+    "mode": "letters"
+   },
+   {
+    "text": "IMAGENS",
+    "cue": "l2",
+    "y": 960,
+    "size": 190,
+    "mode": "letters",
+    "color": "coral",
+    "punch": true,
+    "glow": true
+   }
+  ],
+  "keywords": {
+   "l1": "cortes",
+   "l2": "imagens"
+  }
+ },
+ "4": {
+  "type": "image",
+  "image": "teste3",
+  "text": [
+   "MEXEM E UMA"
+  ],
+  "keywords": {
+   "text": "mexem"
+  }
+ },
+ "5": {
+  "type": "camera",
+  "move": "punch",
+  "keyword": "PALAVRA",
+  "keywords": {
+   "text": "cada",
+   "punch": "palavra",
+   "keyword": "palavra"
+  }
+ }
+}

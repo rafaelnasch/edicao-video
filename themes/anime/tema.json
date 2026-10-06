@@ -1,0 +1,50 @@
+{
+ "nome": "anime",
+ "titulo": "Anime premium (motor v4)",
+ "descricao": "O padrão congelado do vídeo de referência 'Dinâmico v4': palco navy com névoa sólida, grade em perspectiva, poeira, HUD, luz por formas sólidas com blur, imagens premium 3D/anime cinematográficas com o elenco do projeto.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/anime/engine/identidade.js + marcas.js (tokens: paleta, papéis de cor, fontes por papel, receitas de palco, legenda, componentes, efeitos, transições, pós e textos), carregados pelo core.js em todo tema; o núcleo scripts/engine/src não guarda valor de marca",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "paleta_roteiro": {
+  "navy": "#0A1428",
+  "coral": "#E63946",
+  "cyan": "#06B6D4",
+  "dourado": "pontual"
+ },
+ "cores": {
+  "navy": "#0A1428",
+  "navy2": "#0F1D38",
+  "navy3": "#13244A",
+  "deep": "#050B17",
+  "steel": "#29445D",
+  "coral": "#E63946",
+  "coralHot": "#FF5A66",
+  "cyan": "#06B6D4",
+  "cyanHot": "#5EEBFF",
+  "white": "#F5F7FA",
+  "mist": "#B9C8D8",
+  "gold": "#F4B942"
+ },
+ "fontes": {
+  "display": "assets/fonts/BricolageGrotesque.ttf (Bricolage Grotesque, OFL)",
+  "mono": "assets/fonts/JetBrainsMono-Bold.ttf (código e HUD)"
+ },
+ "materiais": [
+  "palco navy com névoa sólida em blur",
+  "grade de chão em perspectiva",
+  "poeira e faíscas com semente",
+  "anéis, raios, sunburst, warp",
+  "slab 3D de faces sólidas",
+  "grão, vinheta sólida, scanlines, HUD"
+ ],
+ "legenda": "pill navy centralizado em y 1375, Bricolage 800 em caixa alta, palavra atual em bloco coral",
+ "camera": "talking head em tela cheia com punch (overshoot, flash, faíscas, shake), push e pull, grade navy",
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/anime/prompts.py",
+  "referencias": "scripts/elenco.py (elenco do projeto: folha aprovada do tema ou fotos das pessoas) e imagens aprovadas do projeto"
+ }
+}

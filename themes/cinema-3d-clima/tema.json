@@ -1,0 +1,142 @@
+{
+ "nome": "cinema-3d-clima",
+ "titulo": "Cinema 3D Clima (frame de longa 3D com o clima do vídeo)",
+ "descricao": "Frame de filme 3D fotografado por câmera de cinema: personagem de longa de animação (formas simplificadas, cabeça grande, olho enorme brilhante) com materiais fotorrealistas num mundo real dessaturado, lente ~85 mm f/1.8, bokeh cremoso. O CLIMA muda por vídeo (campo clima): paleta do mundo, partícula, elemento que pousa no personagem e luz principal. FIXO em todo clima: único acento saturado vermelho #D02A2E com brilho #FF3B30 (luz prática LED/neon/sinalizador perto do personagem, contraluz e rebatimento vermelho), pele pêssego quente, toque de ouro, sem linha, sombra macia com oclusão profunda, detalhe macro de tecido.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/cinema-3d-clima/engine (tema.css, tema.js, clima.js, tipo.js, palco.js, cenas.js, cenas-b.js, transicoes.js) por cima de scripts/engine/src",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "cores": {
+  "vermelho": "#D02A2E",
+  "brilho": "#FF3B30",
+  "ouro": "#B8923A",
+  "pele": "#E9B48E",
+  "texto": "#EEF3F6",
+  "nota": "mundo, névoa, tecido, sombra e partícula vêm do preset de clima (clima.presets); o resto é fixo"
+ },
+ "clima": {
+  "campo": "plan.json \"clima\" (build_full.py --clima NOME, ou \"clima\" em beats.json/direcao.json) e cenas.json \"clima\" (prompts das imagens). Sem clima: neve (a referência).",
+  "como_escolher": "Leia a fala e escolha o clima que dá o sentido do vídeo, NUNCA neve por padrão: manhã ou 'bom dia' com relatório, cidade e negócio = garoa-manha; tensão, virada, noite, madrugada de trabalho = chuva-noite ou noite-escritorio; conquista, fechamento, gratidão, fim de dia = sol-fim-de-tarde; começar do zero, travessia, deserto de resultado = deserto; dúvida, mistério, revelação = neblina; frio, recomeço, inverno, Natal = neve. O mundo tem de ficar do lado oposto do vermelho (frio) sempre que der, porque o contraste complementar é a assinatura; nos climas quentes o vermelho ganha o LED mais forte.",
+  "o_que_muda": "paleta do mundo (mundo, mundo2, tecido, sombra, névoa), partícula (tipo, cor, velocidade, vento, rastro), elemento que pousa no personagem (texto do prompt) e luz principal (direção, temperatura, prompt)",
+  "presets": {
+   "neve": {
+    "mundo": "#9FB3C2",
+    "mundo2": "#7F97A8",
+    "tecido": "#2B3A4A",
+    "sombra": "#0F1820",
+    "nevoa": "#C9D6DF",
+    "particula": "#E6EEF3",
+    "tipo": "flocos",
+    "pousa": "fresh powder snow dusted on the head, shoulders, hood and sleeves",
+    "luz": "overcast diffuse winter daylight from the upper left",
+    "ambiente": "snowy industrial rooftop city with water towers, everything soft in the background"
+   },
+   "garoa-manha": {
+    "mundo": "#93A6B2",
+    "mundo2": "#6E8494",
+    "tecido": "#27394A",
+    "sombra": "#0E171F",
+    "nevoa": "#BFCCD4",
+    "particula": "#D8E3EA",
+    "tipo": "garoa",
+    "pousa": "tiny beaded raindrops sitting on the hair, the fabric fibers and the shoulders, a thin wet sheen on the skin",
+    "luz": "soft grey early-morning overcast light from the upper left, wet reflective street, the city just waking up",
+    "ambiente": "wet downtown city street at early morning in a fine drizzle, glass office towers and a crosswalk far behind, wet asphalt reflections"
+   },
+   "chuva-noite": {
+    "mundo": "#4F6478",
+    "mundo2": "#34485B",
+    "tecido": "#1E2B38",
+    "sombra": "#070D14",
+    "nevoa": "#6E8397",
+    "particula": "#B9CAD8",
+    "tipo": "chuva",
+    "pousa": "heavy raindrops running down the hood and cheeks, soaked fabric fibers",
+    "luz": "cold blue street light from the upper left through heavy rain",
+    "ambiente": "city alley at night in heavy rain, puddles and blurred street lamps"
+   },
+   "sol-fim-de-tarde": {
+    "mundo": "#C4AE97",
+    "mundo2": "#9C8672",
+    "tecido": "#3A3029",
+    "sombra": "#1E1612",
+    "nevoa": "#DCCBB6",
+    "particula": "#F1DDB8",
+    "tipo": "poeira",
+    "pousa": "fine golden dust specks resting on the hair and the shoulders, backlit fuzz on the fabric",
+    "luz": "low warm late-afternoon sun from behind on the left, long soft shadows, hazy air",
+    "ambiente": "rooftop terrace at the end of the afternoon over a hazy city skyline"
+   },
+   "noite-escritorio": {
+    "mundo": "#56687A",
+    "mundo2": "#3A4B5C",
+    "tecido": "#202C38",
+    "sombra": "#0A1017",
+    "nevoa": "#7C8FA0",
+    "particula": "#C9D5DF",
+    "tipo": "poeira",
+    "pousa": "fine dust motes and a light condensation mist on the fabric",
+    "luz": "cool monitor glow and dim ceiling practicals from the upper left, city lights through the window",
+    "ambiente": "empty open-plan office at night, glass wall with the city behind, desks falling into darkness"
+   },
+   "deserto": {
+    "mundo": "#CDB89C",
+    "mundo2": "#A99378",
+    "tecido": "#3B3129",
+    "sombra": "#221A13",
+    "nevoa": "#E3D3BC",
+    "particula": "#E8D7BA",
+    "tipo": "areia",
+    "pousa": "fine sand grains caught in the fabric fibers and on the shoulders",
+    "luz": "harsh high sun softened by a haze of blowing sand, from the upper left",
+    "ambiente": "open desert road with dunes and a lone gas station far behind"
+   },
+   "neblina": {
+    "mundo": "#A9B7BF",
+    "mundo2": "#8A9AA4",
+    "tecido": "#2C3943",
+    "sombra": "#111A21",
+    "nevoa": "#D5DEE3",
+    "particula": "#E9EFF2",
+    "tipo": "neblina",
+    "pousa": "tiny dew droplets on the hair and the fabric fibers",
+    "luz": "diffuse milky fog light from the upper left",
+    "ambiente": "foggy bridge at dawn with lamp posts disappearing into the mist"
+   }
+  },
+  "trecho_teste": "Resultados de Vendas (relato de vendas de ingressos e lucro no 'bom dia'): garoa-manha. É manhã, é relatório de negócio da cidade grande, e o azul-ardósia molhado fica no lado oposto do vermelho."
+ },
+ "fontes": {
+  "cinema": "themes/cinema-3d-clima/fonts/Oswald-VariableFont_wght.ttf (Oswald, OFL 1.1, peso 200 a 700)",
+  "origem": "github.com/google/fonts ofl/oswald, baixada em 24/09/2026"
+ },
+ "materiais": [
+  "palco de lente 85 mm: prato do clima (imagem 'palco' gerada por vídeo, ou mundo procedural) desfocado a 14 px, formas de bokeh cremoso em discos sólidos desfocados",
+  "partículas do clima em 3 camadas: fundo pequenas e desfocadas, meio nítidas, frente grandes discos de bokeh passando diante do conteúdo",
+  "luz prática vermelha (LED, neon, sinalizador) pulsando na borda do quadro, derramando vermelho por soma de discos desfocados",
+  "rebatimento vermelho na borda direita de todo texto e cartão (cópia deslocada em vermelho) e sombra macia embaixo",
+  "gradação: mundo levado à cor do clima por saturação e luz suave, grão fino de película, vinheta sólida",
+  "faixas pretas de cinema finas no topo e na base, fora da zona segura"
+ ],
+ "legenda": "Oswald 600 em caixa alta, placa escura translúcida #0F1820 com filete ardósia, palavra atual em vermelho brilho #FF3B30 com filete vermelho embaixo e rebatimento, palavras futuras em ardósia; centralizada na faixa da legenda do formato (9:16: y 1375)",
+ "camera": "o vídeo recebe a gradação do clima (dessaturado na temperatura do mundo), contraluz vermelha da prática pulsando na borda direita, partículas do clima na frente e atrás, foco puxado na entrada (desfoque 10 a 0 px em 0,3 s) e punch em câmera lenta",
+ "transicoes": {
+  "whip": "chicote com rastro vermelho da prática",
+  "zoom": "foco puxado: A sai de foco e cresce, B entra desfocado e firma",
+  "iris": "diafragma de lente de 7 lâminas abrindo, borda vermelha",
+  "slice": "persiana de luz: faixas de B entrando com filete vermelho",
+  "glitch": "queima de película: clarão vermelho sólido desfocado com salto de quadro",
+  "flash": "clarão do sinalizador vermelho",
+  "slide": "dolly lateral com desfoque",
+  "wipe": "cortina de névoa do clima atravessando",
+  "cut": "corte seco"
+ },
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/cinema-3d-clima/prompts.py",
+  "referencias": "placa de estilo opcional em themes/cinema-3d-clima/ref/amostra-30-palco-garoa.jpg (só ESTILO, sem personagem; não vem com a skill, sem ela o estilo vem do texto) e scripts/elenco.py (pessoas da pasta da empresa)"
+ },
+ "qa_estilo": "TEMA CINEMA 3D CLIMA: frame de longa 3D com clima. NÃO é defeito: fundo muito desfocado, partículas grandes desfocadas na frente do quadro, gotas ou neve pousadas no personagem, mundo dessaturado e frio, único acento vermelho, clarão vermelho pulsando na borda, faixas pretas finas no topo e na base, rebatimento vermelho na borda do texto, legenda com palavra vermelha. É defeito: degradê, emoji, texto cortado, rosto coberto, letra ou número dentro das imagens geradas, personagem diferente do elenco (pelas fotos), cor saturada que não seja o vermelho."
+}

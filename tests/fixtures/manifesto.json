@@ -1,0 +1,16 @@
+{
+ "schema": "edicao-video/fixtures@1",
+ "versoes": {
+  "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "pillow": "11.3.0",
+  "python": "3.9.6"
+ },
+ "arquivos": {
+  "transcript.json": "f6d203f717b36d2244c5df399684c09990676e72ef7320c297166852d5fb27bf",
+  "voz.wav": "3fada3d27826ae3ef1a54e81f87a6dcb7e670de007af041c14bb6a793f483a7a",
+  "fala-9x16.mp4": "1a74271f03c3824a60d0eed4d1f6bcb2f8c027a4c095121bd0f77d09d0521ca4",
+  "fala-16x9.mp4": "f48c802981204233bdbd3f3ce19067dce843d26ca1cc80b465017a3f3213d46c",
+  "imagens/quadro-a.png": "a2c026e4f290c4f3509126927138c5a1dcba761e02c0c91ce72210f291d8b9d8",
+  "imagens/quadro-b.png": "4dbb05814677b841b0631e474739353849a1475a0b9c031a44afadbae8b15712"
+ }
+}

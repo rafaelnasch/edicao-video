@@ -1,0 +1,58 @@
+{
+ "nome": "neon-noir-vidro",
+ "titulo": "Neon Noir de Vidro (estilo 04)",
+ "descricao": "Cyber-noir aspiracional: cidade à noite depois da chuva, milhares de janelas acesas em bokeh, névoa azul, reflexos verticais longos no chão molhado, painéis de vidro fosco flutuando com filete branco e brilho ciano, pictogramas de linha acendendo, um único acento quente (carmim, uma peça vermelha da roupa). Imagens: fotografia digital fotorrealista de rua à noite, sujeito iluminado como em estúdio.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/neon-noir-vidro/engine (tema.css, tema.js, vidro.js, cenas.js, cenas-b.js, transicoes.js) por cima de scripts/engine/src",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "cores": {
+  "noite": "#090C14",
+  "noite2": "#131621",
+  "ardosia": "#1B2C3F",
+  "ardosia2": "#2E394B",
+  "ciano": "#09B2F3",
+  "cianoHot": "#6FD6FF",
+  "petroleo": "#156D91",
+  "prata": "#C6CAD9",
+  "prata2": "#99ACC1",
+  "branco": "#F2F5FA",
+  "carmim": "#A91831",
+  "carmimHot": "#E0304C",
+  "ouro": "#D9B45A"
+ },
+ "fontes": {
+  "display": "themes/neon-noir-vidro/fonts/ChakraPetch-Bold.ttf (Chakra Petch 700, OFL 1.1, cantos chanfrados)",
+  "legenda": "themes/neon-noir-vidro/fonts/ChakraPetch-SemiBold.ttf (Chakra Petch 600, OFL 1.1)",
+  "origem": "github.com/google/fonts (ofl/chakrapetch), baixadas em 24/09/2026"
+ },
+ "materiais": [
+  "cidade noturna: prédios em silhueta ardósia com janelas acesas em pontos sólidos, névoa por formas sólidas com blur",
+  "bokeh de janelas: discos sólidos desfocados em 3 profundidades com parallax",
+  "chão molhado: reflexos verticais longos em faixas sólidas desfocadas que tremem",
+  "chuva leve: riscos finos com semente e respingos no chão",
+  "painel de vidro fosco: retângulo chanfrado arredondado, corpo translúcido de opacidade única, cópia desfocada do fundo (refração simulada), filete branco na borda, brilho ciano por forma sólida com blur",
+  "pictogramas de linha ciano que se desenham e acendem (onda, balão, raio, ingresso, moeda, celular, barras, check, balança, foguete)",
+  "perspectiva de um ponto: avenida e piso convergindo no centro, câmera com dolly para o ponto de fuga"
+ ],
+ "legenda": "painel de vidro fosco chanfrado centralizado na faixa da legenda do formato (9:16: y 1375), Chakra Petch 600 em caixa alta, palavra atual em bloco carmim sólido com filete, palavras futuras em prata",
+ "camera": "talking head em tela cheia com grade fria (ardósia e ciano), filete de luz fria nas bordas, chuva leve e bokeh na frente, placa de texto em painel de vidro com a palavra-chave em carmim; punch com overshoot, clarão ciano e anel",
+ "transicoes": {
+  "whip": "chicote com riscos de néon e desfoque",
+  "zoom": "mergulho pelo ponto de fuga da avenida",
+  "iris": "abertura por um painel de vidro chanfrado que cresce",
+  "slice": "lâminas de vidro deslizando com filete branco",
+  "glitch": "refração: faixas deslocadas como vidro molhado",
+  "flash": "clarão ciano frio",
+  "slide": "painel de vidro empurrando com filete de luz",
+  "wipe": "cortina de chuva com filete ciano"
+ },
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/neon-noir-vidro/prompts.py",
+  "referencias": "estilo pelo texto de prompts.py e scripts/elenco.py (elenco do projeto)"
+ },
+ "qa_estilo": "TEMA NEON NOIR DE VIDRO: NÃO é defeito: fundo quase preto azulado, bokeh de janelas, névoa azul, chuva fina, reflexos verticais no chão, painéis de vidro translúcidos com borda branca e brilho ciano, pictogramas de linha, palavra ativa da legenda em carmim, câmera com grade fria. É defeito: degradê, emoji, texto cortado, rosto coberto, letra ou número dentro das imagens geradas, personagem diferente do elenco (pelas fotos), acento quente em mais de um elemento das imagens além da peça vermelha da roupa."
+}

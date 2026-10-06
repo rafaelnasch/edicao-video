@@ -1,0 +1,58 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "edicao-video/padrao.schema.json",
+ "title": "Padrão visual reutilizável de uma empresa (02-padroes/padrao-<formato>.json)",
+ "description": "Só regra visual e de ritmo, nunca conteúdo: nenhum texto de tela, número do vídeo, oferta, preço, chamada final ou tempo de cena. Gerado por scripts/padrao.py --salvar (status proposto) e aprovado por padrao.py --aprovar --por dono. Lido pelo build_full.py --padrao: estilo_base, formato, perfil, legenda.modo, transicoes_permitidas, status e o bloco video. Os outros campos documentam o padrão para quem dirige o próximo vídeo.",
+ "type": "object",
+ "required": ["versao", "status", "estilo_base", "formato"],
+ "additionalProperties": false,
+ "properties": {
+  "versao": {"const": 1},
+  "status": {"enum": ["proposto", "aprovado", "substituido"],
+             "description": "proposto: só aviso quando uma transição sai da lista; aprovado: erro; substituido: guardado para histórico, nunca lido"},
+  "nome": {"type": "string", "description": "rótulo do padrão no padrao-aprovado.md (ex.: Reels)"},
+  "aprovado_por": {"type": "string"},
+  "aprovado_em": {"type": "string", "description": "AAAA-MM-DD ou vazio"},
+  "aprovado_como": {"type": "string", "description": "como foi aprovado (OK explícito do dono; recorrência em 2 vídeos fica para o P1)"},
+  "gerado": {"type": "string", "description": "AAAA-MM-DD da extração pelo padrao.py"},
+  "origem": {
+   "description": "de onde o padrão saiu: lista de vídeos (05-videos/<id> com o run e a versão) ou um texto quando os vídeos de origem não estão na pasta",
+   "type": ["array", "string"],
+   "items": {"type": "string", "minLength": 1}
+  },
+  "estilo_base": {"type": "string", "minLength": 1},
+  "formato": {"type": "string", "pattern": "^\\d+:\\d+$"},
+  "perfil": {"type": ["string", "null"]},
+  "velocidade": {"type": "number", "exclusiveMinimum": 0},
+  "legenda": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "modo": {"enum": ["legenda-destaque", "legenda-sobria", "legenda-laranja"]},
+    "corpo": {"type": "number", "exclusiveMinimum": 0},
+    "quebra": {"enum": ["tamanho", "frase"], "description": "frase: legenda por unidade de sentido, até 2 linhas (build_full.py grava spec.motor.legenda.quebra)"}
+   }
+  },
+  "transicoes_permitidas": {"type": "array", "items": {"type": "string", "minLength": 1},
+                            "description": "nomes da tabela de transições do build_full.py (os do roteiro); o corte seco sempre vale"},
+  "sfx_nivel_db": {"type": "number", "maximum": 0},
+  "sfx_por_minuto": {"type": "number", "minimum": 0},
+  "cenas_preferidas": {"type": "array", "items": {"type": "string", "minLength": 1}},
+  "video": {
+   "type": "object",
+   "additionalProperties": false,
+   "description": "bloco do vídeo no estilo que desenha gancho e tarja; os textos ficam na direção de cada vídeo",
+   "properties": {
+    "gancho": {"type": "boolean"},
+    "tarja": {"type": "boolean"},
+    "final": {"enum": ["automatico", "loop", "encerramento", "nenhum"],
+              "description": "preferência, não valor fixo: ausente ou automatico = regra do motor (loop só em vídeo curto e sem fala no fim)"},
+    "loop_dur_s": {"type": "number", "exclusiveMinimum": 0},
+    "marcador_max": {"type": "integer", "minimum": 0},
+    "transicoes_marca_max": {"type": "integer", "minimum": 0},
+    "pelo_rosto": {"type": "boolean", "description": "gancho e placa da câmera fora do rosto (build_full.py mede o rosto e grava spec.motor.rosto)"}
+   }
+  },
+  "criterios": {"type": "array", "items": {"type": "string", "minLength": 1}}
+ }
+}

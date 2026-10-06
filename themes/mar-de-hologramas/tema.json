@@ -1,0 +1,57 @@
+{
+ "nome": "mar-de-hologramas",
+ "titulo": "Mar de Hologramas (estilo 17489)",
+ "descricao": "Fotografia cinematográfica fotorrealista composta com camadas de interface holográfica 3D (HUD), key visual de filme de tecnologia: foto de estúdio + motion graphics. Low key, teal and orange, luz motivada pelas telas (ciano de lado, laranja de baixo), contraluz fria. Parede de painéis de vidro em várias profundidades (parallax), selos luminosos enormes desfocados no primeiro plano, rede global de pontos ligando no fundo, riscos horizontais de luz, partículas, bloom e grão fino.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/mar-de-hologramas/engine (tema.css, tema.js, holo.js, cenas.js, cenas-b.js, transicoes.js) por cima de scripts/engine/src",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "cores": {
+  "fundo": "#050B18",
+  "fundo2": "#0A1428",
+  "vidro": "#0C1A33",
+  "vidro2": "#10254A",
+  "ciano": "#1FA2FF",
+  "cianoQuente": "#4FD8FF",
+  "azul": "#0E6BA8",
+  "laranja": "#FF4A1C",
+  "laranjaQuente": "#FF6A2B",
+  "vermelhoNeon": "#E8341C",
+  "branco": "#EAF6FF",
+  "nevoa": "#8FB7D6"
+ },
+ "fontes": {
+  "display": "themes/mar-de-hologramas/fonts/Saira-Variable.ttf (Saira, eixos wght 100..900 e wdth 50..125, OFL 1.1); substitui a família do motor, corpo condensado",
+  "hud": "assets/fonts/JetBrainsMono-Bold.ttf (a mesma do motor)",
+  "origem": "github.com/google/fonts (ofl/saira), baixada em 24/09/2026"
+ },
+ "materiais": [
+  "vidro translúcido: preenchimento navy de opacidade única, borda fina luminosa ciano com bloom, cantos arredondados",
+  "conteúdo dos painéis só abstrato: barras, bolinhas de avatar e pictogramas de linha (estrela, sino, check, envelope, play, pessoa, gráfico sem eixo)",
+  "parede de painéis em 4 profundidades com desfoque por camada (parallax)",
+  "selos gigantes desfocados em laranja neon passando no primeiro plano",
+  "rede global de pontos ligados girando no fundo",
+  "riscos horizontais de luz e bloom por formas sólidas com blur",
+  "partículas ciano e laranja, grão fino"
+ ],
+ "legenda": "pílula de vidro escuro com borda ciano luminosa, centralizada na faixa da legenda do formato (9:16: y 1375), Saira condensada branca, palavra ativa em laranja neon com barra de luz laranja embaixo, palavras futuras em névoa",
+ "camera": "vídeo em low key: lavagem navy, luz ciano de lado, laranja de baixo, painéis de vidro nas bordas, selos desfocados no primeiro plano, placa de texto em vidro",
+ "transicoes": {
+  "whip": "chicote com riscos horizontais ciano e laranja",
+  "zoom": "mergulho através de um painel de vidro",
+  "iris": "anel holográfico ciano e laranja abrindo",
+  "slice": "lâminas de vidro deslizando com borda luminosa",
+  "glitch": "falha de holograma com deslocamento ciano e laranja",
+  "flash": "bloom ciano claro de 2 quadros",
+  "slide": "painel de vidro empurrando com costura ciano",
+  "wipe": "varredura de luz horizontal"
+ },
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/mar-de-hologramas/prompts.py",
+  "referencias": "estilo pelo texto de prompts.py e scripts/elenco.py (elenco do projeto)"
+ },
+ "qa_estilo": "TEMA MAR DE HOLOGRAMAS: NÃO é defeito: fundo quase preto, low key com sombras fundas, painéis de vidro ciano desfocados em camadas, selos laranja enormes e desfocados nas bordas do primeiro plano, rede de pontos no fundo, riscos horizontais de luz, bloom, partículas, grão fino, contraste ciano contra laranja. É defeito: degradê, emoji, travessão, texto cortado, rosto coberto, selo tapando texto ou rosto, letra, número ou interrogação dentro dos painéis ou das imagens geradas."
+}

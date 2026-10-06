@@ -1,0 +1,676 @@
+{
+ "text": "Sua equipe perde horas toda semana com tarefas que se repetem são 12 horas perdidas por mês imagine o time livre disso primeiro agenda relatórios e mensagens a planilha agora alimenta o painel e o trabalho acontece sozinho em março o ciclo recomeça o plano custa 49 reais por mês a rotina fica mais leve o sistema trabalha 24 horas a lista virou um painel vivo isso muda o jeito de trabalhar a manhã e a tarde dividem o quadro tudo dentro da sua marca com a identidade de sempre a mesma base pode crescer um assistente sempre disponível e você acompanha cada etapa instala uma vez e funciona o retrabalho some da semana o resultado aparece no relatório nos canais site vídeo e mensagem escreva sua primeira tarefa hoje e comece agora mesmo",
+ "language": "pt",
+ "words": [
+  {
+   "word": "Sua",
+   "start": 0.3,
+   "end": 0.56
+  },
+  {
+   "word": "equipe",
+   "start": 0.62,
+   "end": 1.01
+  },
+  {
+   "word": "perde",
+   "start": 1.07,
+   "end": 1.41
+  },
+  {
+   "word": "horas",
+   "start": 1.47,
+   "end": 1.81
+  },
+  {
+   "word": "toda",
+   "start": 1.87,
+   "end": 2.17
+  },
+  {
+   "word": "semana",
+   "start": 2.23,
+   "end": 2.62
+  },
+  {
+   "word": "com",
+   "start": 2.8,
+   "end": 3.06
+  },
+  {
+   "word": "tarefas",
+   "start": 3.12,
+   "end": 3.55
+  },
+  {
+   "word": "que",
+   "start": 3.61,
+   "end": 3.87
+  },
+  {
+   "word": "se",
+   "start": 3.93,
+   "end": 4.14
+  },
+  {
+   "word": "repetem",
+   "start": 4.2,
+   "end": 4.63
+  },
+  {
+   "word": "são",
+   "start": 4.81,
+   "end": 5.07
+  },
+  {
+   "word": "12",
+   "start": 5.13,
+   "end": 5.34
+  },
+  {
+   "word": "horas",
+   "start": 5.4,
+   "end": 5.74
+  },
+  {
+   "word": "perdidas",
+   "start": 5.8,
+   "end": 6.28
+  },
+  {
+   "word": "por",
+   "start": 6.34,
+   "end": 6.6
+  },
+  {
+   "word": "mês",
+   "start": 6.66,
+   "end": 6.92
+  },
+  {
+   "word": "imagine",
+   "start": 7.1,
+   "end": 7.53
+  },
+  {
+   "word": "o",
+   "start": 7.59,
+   "end": 7.75
+  },
+  {
+   "word": "time",
+   "start": 7.81,
+   "end": 8.11
+  },
+  {
+   "word": "livre",
+   "start": 8.17,
+   "end": 8.51
+  },
+  {
+   "word": "disso",
+   "start": 8.57,
+   "end": 8.91
+  },
+  {
+   "word": "primeiro",
+   "start": 9.09,
+   "end": 9.57
+  },
+  {
+   "word": "agenda",
+   "start": 9.63,
+   "end": 10.02
+  },
+  {
+   "word": "relatórios",
+   "start": 10.08,
+   "end": 10.65
+  },
+  {
+   "word": "e",
+   "start": 10.71,
+   "end": 10.87
+  },
+  {
+   "word": "mensagens",
+   "start": 10.93,
+   "end": 11.45
+  },
+  {
+   "word": "a",
+   "start": 11.63,
+   "end": 11.79
+  },
+  {
+   "word": "planilha",
+   "start": 11.85,
+   "end": 12.33
+  },
+  {
+   "word": "agora",
+   "start": 12.39,
+   "end": 12.73
+  },
+  {
+   "word": "alimenta",
+   "start": 12.79,
+   "end": 13.27
+  },
+  {
+   "word": "o",
+   "start": 13.33,
+   "end": 13.49
+  },
+  {
+   "word": "painel",
+   "start": 13.55,
+   "end": 13.94
+  },
+  {
+   "word": "e",
+   "start": 14.12,
+   "end": 14.28
+  },
+  {
+   "word": "o",
+   "start": 14.34,
+   "end": 14.5
+  },
+  {
+   "word": "trabalho",
+   "start": 14.56,
+   "end": 15.04
+  },
+  {
+   "word": "acontece",
+   "start": 15.1,
+   "end": 15.58
+  },
+  {
+   "word": "sozinho",
+   "start": 15.64,
+   "end": 16.07
+  },
+  {
+   "word": "em",
+   "start": 16.25,
+   "end": 16.46
+  },
+  {
+   "word": "março",
+   "start": 16.52,
+   "end": 16.86
+  },
+  {
+   "word": "o",
+   "start": 16.92,
+   "end": 17.08
+  },
+  {
+   "word": "ciclo",
+   "start": 17.14,
+   "end": 17.48
+  },
+  {
+   "word": "recomeça",
+   "start": 17.54,
+   "end": 18.02
+  },
+  {
+   "word": "o",
+   "start": 18.2,
+   "end": 18.36
+  },
+  {
+   "word": "plano",
+   "start": 18.42,
+   "end": 18.76
+  },
+  {
+   "word": "custa",
+   "start": 18.82,
+   "end": 19.16
+  },
+  {
+   "word": "49",
+   "start": 19.22,
+   "end": 19.43
+  },
+  {
+   "word": "reais",
+   "start": 19.49,
+   "end": 19.83
+  },
+  {
+   "word": "por",
+   "start": 19.89,
+   "end": 20.15
+  },
+  {
+   "word": "mês",
+   "start": 20.21,
+   "end": 20.47
+  },
+  {
+   "word": "a",
+   "start": 20.65,
+   "end": 20.81
+  },
+  {
+   "word": "rotina",
+   "start": 20.87,
+   "end": 21.26
+  },
+  {
+   "word": "fica",
+   "start": 21.32,
+   "end": 21.62
+  },
+  {
+   "word": "mais",
+   "start": 21.68,
+   "end": 21.98
+  },
+  {
+   "word": "leve",
+   "start": 22.04,
+   "end": 22.34
+  },
+  {
+   "word": "o",
+   "start": 22.52,
+   "end": 22.68
+  },
+  {
+   "word": "sistema",
+   "start": 22.74,
+   "end": 23.17
+  },
+  {
+   "word": "trabalha",
+   "start": 23.23,
+   "end": 23.71
+  },
+  {
+   "word": "24",
+   "start": 23.77,
+   "end": 23.98
+  },
+  {
+   "word": "horas",
+   "start": 24.04,
+   "end": 24.38
+  },
+  {
+   "word": "a",
+   "start": 24.56,
+   "end": 24.72
+  },
+  {
+   "word": "lista",
+   "start": 24.78,
+   "end": 25.12
+  },
+  {
+   "word": "virou",
+   "start": 25.18,
+   "end": 25.52
+  },
+  {
+   "word": "um",
+   "start": 25.58,
+   "end": 25.79
+  },
+  {
+   "word": "painel",
+   "start": 25.85,
+   "end": 26.24
+  },
+  {
+   "word": "vivo",
+   "start": 26.3,
+   "end": 26.6
+  },
+  {
+   "word": "isso",
+   "start": 26.78,
+   "end": 27.08
+  },
+  {
+   "word": "muda",
+   "start": 27.14,
+   "end": 27.44
+  },
+  {
+   "word": "o",
+   "start": 27.5,
+   "end": 27.66
+  },
+  {
+   "word": "jeito",
+   "start": 27.72,
+   "end": 28.06
+  },
+  {
+   "word": "de",
+   "start": 28.12,
+   "end": 28.33
+  },
+  {
+   "word": "trabalhar",
+   "start": 28.39,
+   "end": 28.91
+  },
+  {
+   "word": "a",
+   "start": 29.09,
+   "end": 29.25
+  },
+  {
+   "word": "manhã",
+   "start": 29.31,
+   "end": 29.65
+  },
+  {
+   "word": "e",
+   "start": 29.71,
+   "end": 29.87
+  },
+  {
+   "word": "a",
+   "start": 29.93,
+   "end": 30.09
+  },
+  {
+   "word": "tarde",
+   "start": 30.15,
+   "end": 30.49
+  },
+  {
+   "word": "dividem",
+   "start": 30.55,
+   "end": 30.98
+  },
+  {
+   "word": "o",
+   "start": 31.04,
+   "end": 31.2
+  },
+  {
+   "word": "quadro",
+   "start": 31.26,
+   "end": 31.65
+  },
+  {
+   "word": "tudo",
+   "start": 31.83,
+   "end": 32.13
+  },
+  {
+   "word": "dentro",
+   "start": 32.19,
+   "end": 32.58
+  },
+  {
+   "word": "da",
+   "start": 32.64,
+   "end": 32.85
+  },
+  {
+   "word": "sua",
+   "start": 32.91,
+   "end": 33.17
+  },
+  {
+   "word": "marca",
+   "start": 33.23,
+   "end": 33.57
+  },
+  {
+   "word": "com",
+   "start": 33.75,
+   "end": 34.01
+  },
+  {
+   "word": "a",
+   "start": 34.07,
+   "end": 34.23
+  },
+  {
+   "word": "identidade",
+   "start": 34.29,
+   "end": 34.86
+  },
+  {
+   "word": "de",
+   "start": 34.92,
+   "end": 35.13
+  },
+  {
+   "word": "sempre",
+   "start": 35.19,
+   "end": 35.58
+  },
+  {
+   "word": "a",
+   "start": 35.76,
+   "end": 35.92
+  },
+  {
+   "word": "mesma",
+   "start": 35.98,
+   "end": 36.32
+  },
+  {
+   "word": "base",
+   "start": 36.38,
+   "end": 36.68
+  },
+  {
+   "word": "pode",
+   "start": 36.74,
+   "end": 37.04
+  },
+  {
+   "word": "crescer",
+   "start": 37.1,
+   "end": 37.53
+  },
+  {
+   "word": "um",
+   "start": 37.71,
+   "end": 37.92
+  },
+  {
+   "word": "assistente",
+   "start": 37.98,
+   "end": 38.55
+  },
+  {
+   "word": "sempre",
+   "start": 38.61,
+   "end": 39.0
+  },
+  {
+   "word": "disponível",
+   "start": 39.06,
+   "end": 39.63
+  },
+  {
+   "word": "e",
+   "start": 39.81,
+   "end": 39.97
+  },
+  {
+   "word": "você",
+   "start": 40.03,
+   "end": 40.33
+  },
+  {
+   "word": "acompanha",
+   "start": 40.39,
+   "end": 40.91
+  },
+  {
+   "word": "cada",
+   "start": 40.97,
+   "end": 41.27
+  },
+  {
+   "word": "etapa",
+   "start": 41.33,
+   "end": 41.67
+  },
+  {
+   "word": "instala",
+   "start": 41.85,
+   "end": 42.28
+  },
+  {
+   "word": "uma",
+   "start": 42.34,
+   "end": 42.6
+  },
+  {
+   "word": "vez",
+   "start": 42.66,
+   "end": 42.92
+  },
+  {
+   "word": "e",
+   "start": 42.98,
+   "end": 43.14
+  },
+  {
+   "word": "funciona",
+   "start": 43.2,
+   "end": 43.68
+  },
+  {
+   "word": "o",
+   "start": 43.86,
+   "end": 44.02
+  },
+  {
+   "word": "retrabalho",
+   "start": 44.08,
+   "end": 44.65
+  },
+  {
+   "word": "some",
+   "start": 44.71,
+   "end": 45.01
+  },
+  {
+   "word": "da",
+   "start": 45.07,
+   "end": 45.28
+  },
+  {
+   "word": "semana",
+   "start": 45.34,
+   "end": 45.73
+  },
+  {
+   "word": "o",
+   "start": 45.91,
+   "end": 46.07
+  },
+  {
+   "word": "resultado",
+   "start": 46.13,
+   "end": 46.65
+  },
+  {
+   "word": "aparece",
+   "start": 46.71,
+   "end": 47.14
+  },
+  {
+   "word": "no",
+   "start": 47.2,
+   "end": 47.41
+  },
+  {
+   "word": "relatório",
+   "start": 47.47,
+   "end": 47.99
+  },
+  {
+   "word": "nos",
+   "start": 48.17,
+   "end": 48.43
+  },
+  {
+   "word": "canais",
+   "start": 48.49,
+   "end": 48.88
+  },
+  {
+   "word": "site",
+   "start": 48.94,
+   "end": 49.24
+  },
+  {
+   "word": "vídeo",
+   "start": 49.3,
+   "end": 49.64
+  },
+  {
+   "word": "e",
+   "start": 49.7,
+   "end": 49.86
+  },
+  {
+   "word": "mensagem",
+   "start": 49.92,
+   "end": 50.4
+  },
+  {
+   "word": "escreva",
+   "start": 50.58,
+   "end": 51.01
+  },
+  {
+   "word": "sua",
+   "start": 51.07,
+   "end": 51.33
+  },
+  {
+   "word": "primeira",
+   "start": 51.39,
+   "end": 51.87
+  },
+  {
+   "word": "tarefa",
+   "start": 51.93,
+   "end": 52.32
+  },
+  {
+   "word": "hoje",
+   "start": 52.38,
+   "end": 52.68
+  },
+  {
+   "word": "e",
+   "start": 52.86,
+   "end": 53.02
+  },
+  {
+   "word": "comece",
+   "start": 53.08,
+   "end": 53.47
+  },
+  {
+   "word": "agora",
+   "start": 53.53,
+   "end": 53.87
+  },
+  {
+   "word": "mesmo",
+   "start": 53.93,
+   "end": 54.27
+  }
+ ]
+}

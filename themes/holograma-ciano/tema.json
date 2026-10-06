@@ -1,0 +1,61 @@
+{
+ "nome": "holograma-ciano",
+ "titulo": "Holograma Ciano Noturno (estilo 17496)",
+ "descricao": "Fotografia cinematográfica fotorrealista de comercial de ficção científica: pessoa real com interfaces holográficas volumétricas de luz ciano, low-key teal de contraste alto, laboratório à noite, um único acento coral-vermelho em cards rejeitados que se desfazem em faíscas. Sem contorno: a borda vem da luz.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/holograma-ciano/engine (tema.css, tema.js, luz.js, cenas.js, cenas-b.js, transicoes.js) por cima de scripts/engine/src",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "cores": {
+  "navy": "#071217",
+  "navy2": "#0B1E28",
+  "navy3": "#123447",
+  "deep": "#040B0F",
+  "steel": "#123447",
+  "coral": "#FF3B4A",
+  "coralHot": "#FF7A84",
+  "cyan": "#19D6F5",
+  "cyanHot": "#7FF3FF",
+  "white": "#E8FBFF",
+  "mist": "#8FB4C2",
+  "gold": "#7FF3FF",
+  "pele": "#B98463",
+  "roupa": "#1B2A4A"
+ },
+ "acento_unico": "coral-vermelho #FF3B4A só em card rejeitado, gasto e palavra-chave de alerta; ouro do anime vira miolo ciano #7FF3FF",
+ "fontes": {
+  "display": "themes/holograma-ciano/fonts/Rajdhani-Bold.ttf e Rajdhani-SemiBold.ttf (Rajdhani, Indian Type Foundry, SIL OFL 1.1)",
+  "mono": "assets/fonts/JetBrainsMono-Bold.ttf (HUD e rótulos técnicos)",
+  "origem": "github.com/google/fonts (ofl/rajdhani), baixadas em 24/09/2026"
+ },
+ "materiais": [
+  "palco preto-petróleo com névoa sólida em blur e fitas de LED ciano no teto e paredes (formas sólidas + blur)",
+  "painéis de vidro aceso em diagonal: face translúcida de opacidade única, borda ciano com bloom",
+  "wireframe que se desenha (globo, grade de chão, cubo), pictogramas de traço fino",
+  "constelação de ícones ligados por filetes",
+  "bloom por formas sólidas + blur em modo lighter, névoa luminosa",
+  "partículas ciano com profundidade, bokeh",
+  "card vermelho rejeitado que se desintegra em faíscas e estilhaços",
+  "scanline sutil de holograma, flicker leve, grão finíssimo, vinheta sólida"
+ ],
+ "legenda": "vidro escuro (petróleo .82) com borda ciano acesa e cantos de HUD, Rajdhani 700 em caixa alta centralizada na faixa do formato (9:16: y 1375), palavra ativa em ciano com bloom; palavra de alerta (número de gasto) em coral com parcimônia",
+ "camera": "talking head com grade teal low-key (lavagem petróleo, luz ciano de um lado, sombra do outro), fitas de LED ciano de recorte, painel holográfico em parallax na frente, punch com varredura de scan e faíscas ciano",
+ "transicoes": {
+  "whip": "chicote com rastros ciano e aberração de luz",
+  "zoom": "mergulho pelo holograma com anel de scan",
+  "iris": "abertura circular com anel ciano e retícula",
+  "slice": "fatias de vidro em diagonal com borda acesa",
+  "glitch": "falha de holograma com desalinhamento e blocos ciano e vermelho",
+  "flash": "clarão ciano",
+  "slide": "painel de vidro empurra com costura acesa",
+  "wipe": "varredura de scan ciano"
+ },
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/holograma-ciano/prompts.py",
+  "referencias": "placa de estilo opcional em themes/holograma-ciano/ref/fundo-laboratorio.jpg (só estilo; não vem com a skill, sem ela o estilo vem do texto); a placa do palco é a chave lab do plano, e sem ela o palco fica só com a névoa; scripts/elenco.py (pessoas da pasta da empresa, identidade fotorrealista pelas fotos)"
+ },
+ "qa_estilo": "TEMA HOLOGRAMA CIANO: o vídeo imita comercial de ficção científica à noite. NÃO é defeito: quadro muito escuro em teal, luz ciano lavando o rosto, sombra quase preta do outro lado, bloom e névoa ciano, scanline sutil, flicker leve de holograma, card vermelho se desfazendo em faíscas, pessoa fotorrealista. É defeito: degradê, emoji, roxo ou magenta, mais de um acento quente fora do coral, texto cortado, rosto coberto, letra ou número dentro das imagens geradas, personagem diferente do elenco (pelas fotos)."
+}

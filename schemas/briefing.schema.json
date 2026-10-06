@@ -1,0 +1,71 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "edicao-video/briefing.schema.json",
+ "title": "briefing.json (derivado do briefing.md do vídeo)",
+ "description": "Gerado por scripts/briefing.py validar a partir de 05-videos/<vídeo>/briefing.md e do cabeçalho do MAPA.md do vídeo. Nunca editar à mão: o briefing.md é a fonte. Campo null = ainda não respondido (há uma pergunta correspondente em 'perguntas').",
+ "type": "object",
+ "required": ["versao", "fonte_sha256", "objetivo", "publico", "destino", "formato", "nicho", "cta", "dados_preservar",
+              "proibido", "estilo", "referencia", "insercoes", "entrega", "perguntas", "completo"],
+ "properties": {
+  "versao": {"const": 1},
+  "fonte": {"type": "string", "description": "arquivo de origem, relativo à pasta do vídeo (briefing.md)"},
+  "fonte_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 do briefing.md; se o .md mudar, o .json fica desatualizado"},
+  "fontes": {"type": "object", "description": "SHA-256 de cada arquivo lido (briefing.md e MAPA.md do vídeo)",
+             "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+  "video": {"type": "string", "description": "nome da pasta do vídeo (AAAA-MM-DD-slug)"},
+  "material": {"type": ["string", "null"]},
+  "objetivo": {"type": ["string", "null"], "description": "ação esperada de quem assiste"},
+  "publico": {"type": ["string", "null"], "description": "quem assiste"},
+  "destino": {"enum": ["reels", "tiktok", "shorts", "youtube", "aula", "anuncio-meta", "linkedin", null]},
+  "formato": {"type": ["string", "null"], "pattern": "^(\\d{1,2}:\\d{1,2}|\\d{3,4}x\\d{3,4})$"},
+  "duracao_alvo_s": {"type": ["number", "null"]},
+  "nicho": {"enum": ["entretenimento", "infoproduto", "b2b", "saude", "juridico", "aula", null]},
+  "cta": {
+   "description": "chamada final; null = SEM CHAMADA (ou ainda sem resposta, quando há a pergunta 'cta')",
+   "oneOf": [
+    {"type": "null"},
+    {"type": "object", "required": ["texto", "falado", "tela"], "additionalProperties": false,
+     "properties": {"texto": {"type": "string", "minLength": 1}, "falado": {"type": ["boolean", "null"]}, "tela": {"type": ["boolean", "null"]}}}
+   ]
+  },
+  "dados_preservar": {
+   "description": "dados que aparecem na tela exatamente como declarados; [] = NENHUM; null = sem resposta",
+   "type": ["array", "null"],
+   "items": {"type": "object", "required": ["texto", "tipo"], "additionalProperties": false,
+             "properties": {"texto": {"type": "string", "minLength": 1},
+                            "tipo": {"enum": ["preco", "prazo", "nome", "numero", "claim", null]}}}
+  },
+  "proibido": {"type": ["array", "null"], "items": {"type": "string"}, "description": "termos que não podem aparecer na tela"},
+  "estilo": {"type": ["array", "null"], "items": {"type": "string"}, "description": "critérios visuais observáveis (os ajustes do item 4)"},
+  "padrao": {"type": ["string", "null"], "description": "padrão aprovado citado no item 4, relativo à pasta da empresa"},
+  "sequencia_visual": {"type": ["string", "null"]},
+  "preservar": {"type": ["string", "null"]},
+  "referencia": {
+   "oneOf": [
+    {"type": "null"},
+    {"type": "object", "required": ["ficha", "criterio"], "additionalProperties": false,
+     "properties": {"ficha": {"type": "string"}, "criterio": {"type": ["string", "null"]}}}
+   ]
+  },
+  "insercoes": {
+   "description": "material do cliente preso a uma fala (P0.6); [] = NENHUMA; null = sem resposta",
+   "type": ["array", "null"],
+   "items": {"type": "object", "required": ["arquivo", "fala", "ocorrencia", "modo", "ate"], "additionalProperties": false,
+             "properties": {"arquivo": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)"},
+                            "fala": {"type": "string", "minLength": 1},
+                            "ocorrencia": {"type": "integer", "minimum": 1},
+                            "modo": {"enum": ["inset", "cheia", "banner-topo"]},
+                            "ate": {"oneOf": [{"const": "fim-da-frase"}, {"type": "number", "exclusiveMinimum": 0}]}}}
+  },
+  "entrega": {"enum": ["amostra", "completo", null]},
+  "perfil": {"type": ["string", "null"], "description": "perfil de references/perfis.json pelo destino e pelo nicho ('destino+nicho')"},
+  "perguntas": {
+   "type": "array",
+   "items": {"type": "object", "required": ["campo", "pergunta", "onde"], "additionalProperties": false,
+             "properties": {"campo": {"type": "string"}, "pergunta": {"type": "string"}, "onde": {"type": "string"}}}
+  },
+  "completo": {"type": "boolean", "description": "true quando não há pergunta pendente"},
+  "avisos": {"type": "array", "items": {"type": "string"}, "description": "o que o leitor achou estranho sem virar pergunta (por exemplo, um padrão citado sem o link [[02-padroes/...]])"}
+ },
+ "additionalProperties": false
+}

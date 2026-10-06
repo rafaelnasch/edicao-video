@@ -1,0 +1,63 @@
+[
+ {
+  "start": 0.0,
+  "end": 1.76,
+  "tipo": "camera",
+  "texto": "HOJE EU VOU",
+  "sfx": "whoosh",
+  "transicao": "corte seco",
+  "descricao": "teste de fumaça",
+  "detalhe": {
+   "motion": "punch",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  }
+ },
+ {
+  "start": 1.76,
+  "end": 3.58,
+  "tipo": "imagem",
+  "texto": "VÍDEO CURTO GANHA",
+  "sfx": "whoosh",
+  "transicao": "whip pan horizontal",
+  "descricao": "teste de fumaça",
+  "detalhe": "quadro-a.png"
+ },
+ {
+  "start": 3.58,
+  "end": 5.48,
+  "tipo": "animacao",
+  "texto": "CORTES IMAGENS",
+  "sfx": "pop",
+  "transicao": "máscara circular",
+  "descricao": "teste de fumaça"
+ },
+ {
+  "start": 5.48,
+  "end": 7.5,
+  "tipo": "imagem",
+  "texto": "MEXEM E UMA",
+  "sfx": "whoosh",
+  "transicao": "zoom through",
+  "descricao": "teste de fumaça",
+  "detalhe": "quadro-b.png"
+ },
+ {
+  "start": 7.5,
+  "end": 9.1,
+  "tipo": "camera",
+  "texto": "CADA PALAVRA ATÉ",
+  "sfx": "pop",
+  "transicao": "corte seco com flash branco de 2 frames",
+  "descricao": "teste de fumaça",
+  "detalhe": {
+   "motion": "punch",
+   "zoom": [
+    1.0,
+    1.12
+   ]
+  }
+ }
+]

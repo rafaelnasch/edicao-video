@@ -1,0 +1,110 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "edicao-video/marca@1",
+ "title": "Kit de marca (01-marca/marca.json)",
+ "description": "Identidade visual de uma empresa, fora da skill. Resolvido por scripts/marca.py; contrato e mapeamento para o motor em references/marca.md. Caminhos sempre relativos à pasta 01-marca/, sem '..' e sem caminho absoluto.",
+ "type": "object",
+ "required": ["versao", "cores"],
+ "additionalProperties": false,
+ "$defs": {
+  "cor": {"type": ["string", "null"], "pattern": "^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$"},
+  "caminho": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|^~|\\\\|(^|/)\\.\\.(/|$))"}},
+  "arquivo_fonte": {
+   "oneOf": [
+    {"$ref": "#/$defs/caminho"},
+    {"type": "object", "required": ["arquivo"], "additionalProperties": false,
+     "properties": {
+      "arquivo": {"$ref": "#/$defs/caminho", "description": ".woff2, .ttf ou .otf"},
+      "unicode_range": {"type": "string", "description": "faixa de caracteres do corte, como no CSS (U+0000-00FF, U+0131)"},
+      "peso": {"type": ["string", "integer"], "description": "peso ou faixa de pesos do arquivo (\"400 700\" numa fonte variável)"},
+      "estilo": {"enum": ["normal", "italic"]}
+     }}
+   ]
+  },
+  "fonte": {
+   "type": "object", "additionalProperties": false,
+   "description": "sem familia, sem arquivos, com arquivo ausente ou com licença desconhecida: aviso, e o papel fica com a fonte neutra do estilo",
+   "properties": {
+    "familia": {"type": "string", "minLength": 1},
+    "peso": {"type": "integer", "minimum": 100, "maximum": 900},
+    "estilo": {"enum": ["normal", "italic"]},
+    "licenca": {"type": ["string", "null"], "description": "OFL, Apache-2.0, UFL, MIT, CC0, dominio-publico ou comercial (comercial exige licenca_arquivo)"},
+    "licenca_arquivo": {"$ref": "#/$defs/caminho"},
+    "arquivos": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/arquivo_fonte"}}
+   }
+  }
+ },
+ "properties": {
+  "_leia": {"type": "string"},
+  "versao": {"const": 1},
+  "nome": {"type": "string", "description": "só relatório; nunca desenhado sem pedido"},
+  "estilo_base": {"type": "string", "description": "estilo da skill com aceita_marca (editorial)"},
+  "cores": {
+   "type": "object", "additionalProperties": false, "required": ["fundo", "texto", "destaque"],
+   "properties": {
+    "fundo": {"$ref": "#/$defs/cor"}, "texto": {"$ref": "#/$defs/cor"}, "destaque": {"$ref": "#/$defs/cor"},
+    "superficie": {"$ref": "#/$defs/cor"}, "superficie2": {"$ref": "#/$defs/cor"}, "borda": {"$ref": "#/$defs/cor"},
+    "grade": {"$ref": "#/$defs/cor"}, "texto_apoio": {"$ref": "#/$defs/cor"}, "ponto": {"$ref": "#/$defs/cor"},
+    "destaque_forte": {"$ref": "#/$defs/cor"}, "sobre_destaque": {"$ref": "#/$defs/cor"}, "claro": {"$ref": "#/$defs/cor"},
+    "sombra": {"$ref": "#/$defs/cor"}, "secundaria": {"$ref": "#/$defs/cor"}, "sucesso": {"$ref": "#/$defs/cor"},
+    "alerta": {"$ref": "#/$defs/cor"}
+   }
+  },
+  "paleta": {
+   "type": "object", "description": "ajuste fino: nomes da paleta do estilo editorial; vence a derivação",
+   "propertyNames": {"enum": ["fundo", "superficie", "superficie2", "borda", "grade", "texto", "apoio", "ponto", "destaque",
+                              "destaqueForte", "sobreDestaque", "claro", "sombra", "secundaria", "sucesso", "alerta",
+                              "pontoDado", "pontoAceso", "preto"]},
+   "additionalProperties": {"$ref": "#/$defs/cor"}
+  },
+  "destaque_unico": {"type": "boolean", "description": "um destaque por quadro (árbitro do motor)"},
+  "fontes": {
+   "type": "object", "additionalProperties": false,
+   "properties": {
+    "titulo": {"$ref": "#/$defs/fonte"}, "titulo_enfase": {"$ref": "#/$defs/fonte"}, "legenda": {"$ref": "#/$defs/fonte"},
+    "texto": {"$ref": "#/$defs/fonte"}, "numero": {"$ref": "#/$defs/fonte"},
+    "travar_peso": {"type": "boolean"}
+   }
+  },
+  "logos": {
+   "type": "object", "additionalProperties": false,
+   "properties": {"claro": {"$ref": "#/$defs/caminho"}, "escuro": {"$ref": "#/$defs/caminho"}, "simbolo": {"$ref": "#/$defs/caminho"}}
+  },
+  "legenda": {
+   "type": "object",
+   "properties": {"forma": {"enum": ["bloco", "cor", "sublinhado"]}, "caixa_alta": {"type": "boolean"},
+                  "quebra": {"enum": ["tamanho", "frase"], "description": "frase: bloco por unidade de sentido, até 2 linhas, sem cortar expressão (spec.motor.legenda.quebra)"},
+                  "modo": {"enum": ["legenda-destaque", "legenda-sobria", "legenda-laranja"],
+                           "description": "legenda-laranja é o nome antigo de legenda-destaque (apelido aceito)"}}
+  },
+  "palco": {"type": "object", "properties": {"fundo": {"enum": ["pontos", "grade", "liso", "imagem"]}, "energia": {"enum": ["alta", "media", "baixa"]}}},
+  "transicoes": {"type": "object", "properties": {"evitar": {"type": "array", "items": {"type": "string"}}, "trocar_por": {"type": "string"}}},
+  "texto": {"type": "object", "properties": {"caixa": {"enum": ["frase", "alta"]}, "vetadas": {"type": "array", "items": {"type": "string"}}, "travessao": {"type": "boolean"}}},
+  "imagens": {
+   "type": "object",
+   "properties": {"estilo_prompt": {"type": "string"}, "proibido_prompt": {"type": "string"},
+                  "rostos": {"enum": ["proibido", "pessoas", "ficticio"]},
+                  "referencias": {"type": "array", "items": {"$ref": "#/$defs/caminho"}}}
+  },
+  "video": {
+   "type": "object",
+   "properties": {
+    "gancho": {"type": "boolean"},
+    "tarja": {"type": "object", "properties": {"pessoa": {"$ref": "#/$defs/caminho", "description": "pasta da pessoa (pessoas/<slug>), dentro de 01-marca/"}}},
+    "pelo_rosto": {"type": "boolean", "description": "gancho e placa da câmera fora do rosto (build_full.py mede o rosto e grava spec.motor.rosto)"},
+    "final": {"enum": ["loop", "encerramento", "nenhum"]},
+    "encerramento": {"type": "object", "properties": {"assinatura": {"type": "string"}, "pedido": {"type": "string"}, "site": {"type": "string"}}}
+   }
+  },
+  "marcador": {"type": "object", "properties": {"tipo": {"enum": ["radar", "pulso", "simbolo", "nenhum"]}}},
+  "proibido": {
+   "type": "object",
+   "properties": {"cores": {"type": "array", "items": {"$ref": "#/$defs/cor"}}, "fontes": {"type": "array", "items": {"type": "string"}},
+                  "efeitos": {"type": "array", "items": {"type": "string"}},
+                  "nomes": {"type": "array", "items": {"type": "string"},
+                            "description": "pessoas, personagens ou marcas que nunca entram em imagem gerada (personagens, personagensExtra, cena, mostra, paineis, tema, autor)"}}
+  },
+  "qa_estilo": {"type": "string", "description": "o que é estilo e não defeito nas folhas de contato"},
+  "dicionario": {"$ref": "#/$defs/caminho", "description": "grafias da empresa (.json), somadas às do estilo pelo build_full.py"}
+ }
+}

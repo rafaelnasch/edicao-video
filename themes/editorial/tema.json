@@ -1,0 +1,136 @@
+{
+ "nome": "editorial",
+ "titulo": "Editorial (estilo neutro para kit de marca)",
+ "descricao": "Estilo genérico e sóbrio por cima do motor: fundo escuro com grade de pontos e anéis, um destaque por quadro (árbitro automático), título na fonte do motor, legenda em Hanken Grotesk 700 com a palavra atual em bloco no destaque, números e rótulos em mono. Mantém a energia do motor (quique, tremor, faíscas e brilho) recolorida no destaque. A identidade de uma empresa (cores, fontes, logos, marcador, encerramento) vem de um kit de marca externo (01-marca/marca.json, scripts/marca.py); sem kit, sai nas cores e fontes neutras abaixo.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/editorial/engine (tema.css, tema.js, identidade.js, estilo.js, cenas.js) por cima de scripts/engine/src; o núcleo desenha as 18 cenas e as 9 transições com os tokens de identidade.js; o kit de marca troca os valores da paleta e as fontes por papel (spec.marca)",
+ "aceita_marca": "total",
+ "capacidades": [
+  "gancho",
+  "tarja",
+  "marcador",
+  "encerramento",
+  "caixa"
+ ],
+ "cores": {
+  "fundo": "#111315",
+  "superficie": "#1A1D21",
+  "superficie2": "#24282D",
+  "borda": "#363A40",
+  "grade": "#272A2F",
+  "texto": "#F5F5F2",
+  "apoio": "#A3A49F",
+  "ponto": "#CFCFCB",
+  "pontoAceso": "#F3E3B8",
+  "destaque": "#E0B341",
+  "destaqueForte": "#ECC66A",
+  "sobreDestaque": "#16110A",
+  "claro": "#FFFFFF"
+ },
+ "papeis": {
+  "bg": "fundo",
+  "surface": "superficie",
+  "edge": "borda",
+  "text": "texto",
+  "textDim": "apoio",
+  "accent": "destaque (o único destaque do quadro)",
+  "onAccent": "sobreDestaque (texto escuro sobre o destaque)",
+  "accent2": "secundaria (neutra: igual a apoio)",
+  "highlight": "destaque (passa pelo árbitro)"
+ },
+ "acento_unico": "um destaque só no foco. Árbitro automático: no modo legenda-destaque (padrão; no plano ainda se chama legenda-laranja) a palavra falada é dona do destaque e as cenas cobertas pela legenda desenham os papéis de foco (accent, accentHot, highlight, alert) na cor do texto; no modo legenda-sobria a palavra ativa fica no texto pleno e as cenas ficam com o destaque. Faíscas e brilho usam a paleta (energia) e não passam pelo árbitro; bordas e riscos das transições ficam claros, o flash é em color-dodge, a poeira é neutra e o destaque saturado das fotos é abafado na carga (faixa de matiz em volta do destaque). O marcador e o encerramento escondem a legenda: o ponto aceso (e o botão do pedido) é o destaque do quadro.",
+ "fontes": {
+  "display": "Bricolage Grotesque (família Brico do motor, assets/fonts), peso 700; 800 no foco",
+  "texto": "themes/editorial/fonts/HankenGrotesk-*.woff2 (Hanken Grotesk 700 na legenda, 600 no texto e no botão; SIL OFL 1.1)",
+  "mono": "JetBrains Mono Bold (família Mono do motor, assets/fonts) nos números e rótulos em caixa alta",
+  "licenca": "themes/editorial/fonts/OFL.txt (Hanken); as fontes do motor estão em assets/fonts",
+  "kit": "o kit de marca troca a família de cada papel (titulo, titulo_enfase, legenda, texto, numero) com os próprios arquivos e licença"
+ },
+ "fontes_neutras": {
+  "titulo": {
+   "familia": "Brico",
+   "nome": "Bricolage Grotesque"
+  },
+  "titulo_enfase": {
+   "familia": "Brico",
+   "nome": "Bricolage Grotesque"
+  },
+  "legenda": {
+   "familia": "Hanken Grotesk",
+   "nome": "Hanken Grotesk"
+  },
+  "texto": {
+   "familia": "Hanken Grotesk",
+   "nome": "Hanken Grotesk"
+  },
+  "numero": {
+   "familia": "Mono",
+   "nome": "JetBrains Mono"
+  }
+ },
+ "materiais": [
+  "fundo escuro com névoa de superfície e um brilho suave do destaque",
+  "grade de pontos de 2,4 px a cada 32 px (em cache) e anéis de 2 px com o centro fora do quadro",
+  "cartão chapado: superfície com fio de até 2 px, raio 16 (24 no cartão grande), sem sombra e sem extrusão",
+  "sinal: cartão com fio de 2 px e borda esquerda de 3 px na cor de apoio (nada no destaque: o ponto do marcador é o destaque do quadro)",
+  "marcador animado: radar (1 volta a cada 6 s, linear, feixe e rastro neutros), pulso (ondas a cada 1,8 s) ou o símbolo do kit, sempre com um único ponto de foco no destaque",
+  "faíscas no destaque e no claro (claras no marcador e no encerramento), brilho suave do destaque; poeira neutra, anel de choque claro, tremor e quique do motor",
+  "grão de 0,02 só como dither, vinheta preta em cache"
+ ],
+ "legenda": "Hanken Grotesk 700 (600 no 16:9), 72 px no 9:16, sem caixa alta, centrada na faixa do formato (9:16: y 1375); palavras já faladas no texto, as próximas a 70%, sombra em 2 camadas; palavra atual em bloco no destaque com aro do fundo de 4 px e texto sobreDestaque redesenhado por recorte dentro do bloco (no deslize nenhuma letra fica clara sobre o destaque), pop de 1,04 em 100 ms (sem pop enquanto a tarja aparece); grifo de 6 px na palavra de ênfase da cena (campo enfase) na cor do texto, e no sobreDestaque dentro do bloco. Modo legenda-sobria: palavra atual no texto pleno, as outras a 62%, sem bloco.",
+ "camera": "talking head com punch (quique, tremor, flash curto em color-dodge e faíscas), push e pull; lavagem do fundo em soft-light e um único vazamento quente à esquerda; placa reta de 72 px em até 2 linhas (não encolhe), parada no lugar, aparece por opacidade junto com o texto, traço de 6 px fixo na borda esquerda que cresce na vertical, base a ~75 px do topo da legenda (9:16: y 1262), palavra-chave no papel de foco",
+ "transicoes": {
+  "whip": "chicote com riscos claros e de apoio",
+  "zoom": "mergulho com clarão claro curto",
+  "iris": "não usada: o build_full.py troca por empurrão curto (transicoes_trocar); se pedida direto no plano, anel neutro na cor de apoio",
+  "slice": "fatias com borda clara",
+  "glitch": "não usada: o build_full.py troca por empurrão curto vertical (transicoes_trocar)",
+  "flash": "clarão claro a 45% no pico",
+  "slide": "empurra com costura clara",
+  "wipe": "varredura com borda clara",
+  "pontos": "dissolve por grade de pontos a partir do foco (pontos acendem na cor de apoio), 11 quadros",
+  "setor": "revelação por setor a partir do ponto de foco (o do marcador, quando é ele que chega), feixe a 1 volta a cada 6 s, setor abrindo em curva de saída e a cena que sai apagando, 24 quadros",
+  "_nota": "bordas, costuras, riscos e anéis das transições são claros ou neutros: o destaque do quadro é da legenda (ou do ponto de foco nas transições pontos e setor)"
+ },
+ "cenas_do_estilo": {
+  "marcador": "marcador de capítulo ou de dado (rotulo, titulo, foco, aviso, valor, tipo radar|pulso|simbolo|nenhum); no máximo 1 por vídeo e nunca nos 3 primeiros segundos; legenda escondida (também durante a transição de entrada e de saída). No 9:16: rótulo, título e cartão sinal no alto da zona segura e o gráfico grande na metade de baixo. A transição setor abre a partir do ponto de foco. Sem tipo: o do kit de marca, senão pulso",
+  "radar": "apelido de marcador com tipo radar (roteiros antigos)",
+  "encerramento": "o marcador encontra o ponto e para; logo do kit, assinatura, pedido em botão no destaque e site (da cena ou de video.encerramento); legenda escondida. Sem logo no kit, a cena é recusada"
+ },
+ "video": {
+  "gancho": "título de até 5 palavras no terço de cima, de t = 0 até 'ate' (padrão 2,6 s), entrada de 120 ms, termina em corte seco; foco no papel de foco; grifo e faísca no foco em 0,55 s; câmera com placa enquanto o gancho aparece é recusada (placa padrão do beat sai sozinha)",
+  "tarja": "uma vez, depois do gancho (padrão de 3,2 a 7,7 s), no alto à esquerda da zona segura, só sobre a câmera: sai antes da primeira cena que não é câmera e da transição dela. Traço de 6 px, nome no papel display em 52, cargo no rótulo mono de 24 px na cor de apoio com tracking .12em",
+  "final": "loop (padrão em 9:16, 4:5, 3:4 e 1:1 abaixo de 45 s e sem fala nos últimos 0,4 s: os últimos 0,4 s dissolvem no quadro 0; o build_full.py recusa loop acima de 45 s ou sobre a fala e o motor o desliga se houver fala no fim), encerramento (cena) ou nenhum",
+  "legenda": "legenda-destaque (padrão; no plano ainda grava legenda-laranja) ou legenda-sobria, fixo no vídeo inteiro"
+ },
+ "caixa": "frase",
+ "caixa_nota": "os textos de exibição do roteiro (title, text, lines, items, from, to, name...) saem em caixa de frase com as grafias do dicionário; caixa alta só nos rótulos mono",
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/editorial/prompts.py",
+  "regra": "fotografia documental; imagem gerada para textura, ambiente, objeto ou detalhe; nunca em cena de prova; preferir foto real ou tela real; o kit de marca define rostos (proibido, pessoas ou ficticio), o estilo do prompt e as referências; na carga o motor abafa o destaque saturado das fotos para o destaque do quadro ficar com a legenda"
+ },
+ "qa_estilo": "ESTILO EDITORIAL: fundo escuro com grade de pontos fina e anéis grandes saindo da borda; títulos com UMA palavra de foco; legenda sem caixa alta, com a palavra atual num bloco no destaque e texto escuro; números e rótulos em mono. NÃO é defeito: faíscas no destaque e claras, anel de choque, tremor, quique, flash claro curto, brilho suave do destaque, rótulo mono em caixa alta, marcador com um ponto pulsando, legenda escondida no marcador e no encerramento, o foco do título na cor do texto quando a legenda está no destaque. É defeito: sunburst, grade em perspectiva, HUD, scanlines, dois pontos de destaque no marcador, texto claro sobre o destaque, texto cortado ou fora da zona segura, letra ou número dentro das imagens geradas, emoji, travessão em título, caixa alta fora do rótulo mono. Com kit de marca, vale o qa_estilo do kit.",
+ "transicoes_trocar": {
+  "_nota": "o build_full.py troca a transição do roteiro por esta no estilo editorial: a iris (disco escuro abrindo sobre o rosto com anel) e o glitch (cara de falha) saem; entra o empurrão curto, um cruzamento suave com 35% de deslize",
+  "iris": {
+   "type": "slide",
+   "dir": "left",
+   "short": true,
+   "frames": 8
+  },
+  "glitch": {
+   "type": "slide",
+   "dir": "up",
+   "short": true,
+   "frames": 8
+  }
+ },
+ "componentes_extra": {
+  "lista": "rótulo no papel display em 76 numa linha enquanto couber em 62 px, senão 2 linhas; ícone à esquerda (check, user, house, clock...) e check à direita só quando o ícone não é check",
+  "typewriter_comment": "cartão chapado com a frase digitada no papel texto em 72 em até 2 linhas e cursor (sem avatar e sem botão de enviar)",
+  "imagem": "placa do título abre junto com o texto e o sublinhado cresce 0,2 s depois dele"
+ }
+}

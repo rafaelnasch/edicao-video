@@ -1,0 +1,323 @@
+{
+ "1": {
+  "type": "camera",
+  "move": "punch",
+  "keyword": "HORAS",
+  "keywords": {
+   "text": "Sua",
+   "punch": "horas",
+   "keyword": "horas"
+  }
+ },
+ "2": {
+  "type": "title",
+  "bg": "sunburst",
+  "lines": [
+   {
+    "text": "TAREFAS",
+    "cue": "l1",
+    "y": 760,
+    "size": 170,
+    "mode": "letters"
+   },
+   {
+    "text": "QUE SE REPETEM",
+    "cue": "l2",
+    "y": 960,
+    "size": 130,
+    "mode": "letters",
+    "color": "coral",
+    "punch": true
+   }
+  ],
+  "keywords": {
+   "l1": "tarefas",
+   "l2": "que"
+  }
+ },
+ "3": {
+  "type": "counter",
+  "label": "HORAS POR MÊS",
+  "value": "12",
+  "keywords": {
+   "value": "12"
+  }
+ },
+ "4": {
+  "type": "image",
+  "image": "exemplo-a",
+  "text": [
+   "TIME LIVRE"
+  ],
+  "keywords": {
+   "text": "time"
+  }
+ },
+ "5": {
+  "type": "list",
+  "title": "PRIMEIRO",
+  "items": [
+   {
+    "label": "AGENDA",
+    "icon": "calendar",
+    "cue": "ag"
+   },
+   {
+    "label": "RELATÓRIOS",
+    "icon": "site",
+    "cue": "rel"
+   },
+   {
+    "label": "MENSAGENS",
+    "icon": "chat",
+    "cue": "msg"
+   }
+  ],
+  "keywords": {
+   "title": "primeiro",
+   "ag": "agenda",
+   "rel": "relatórios",
+   "msg": "mensagens"
+  }
+ },
+ "6": {
+  "type": "flow",
+  "a": {
+   "label": "PLANILHA",
+   "sub": "ORIGEM"
+  },
+  "b": {
+   "label": "PAINEL",
+   "sub": "DESTINO"
+  },
+  "keywords": {
+   "a": "planilha",
+   "energy": "agora",
+   "b": "alimenta"
+  }
+ },
+ "7": {
+  "type": "camera",
+  "move": "push",
+  "keyword": "SOZINHO",
+  "keywords": {
+   "text": "trabalho",
+   "keyword": "sozinho"
+  }
+ },
+ "8": {
+  "type": "calendar",
+  "month": "MARÇO",
+  "name": "NOVO CICLO",
+  "icon": "calendar",
+  "keywords": {
+   "month": "março",
+   "logo": "ciclo"
+  }
+ },
+ "9": {
+  "type": "card",
+  "value": "R$ 49",
+  "label": "PLANO MENSAL",
+  "name": "DA EQUIPE",
+  "logo": "simbolo",
+  "keywords": {
+   "card": 0.0,
+   "value": "49",
+   "logo": "plano"
+  }
+ },
+ "10": {
+  "type": "image",
+  "image": "exemplo-b",
+  "text": [
+   "ROTINA MAIS LEVE"
+  ],
+  "keywords": {
+   "text": "rotina"
+  }
+ },
+ "11": {
+  "type": "clock",
+  "value": "24",
+  "label": "HORAS POR DIA",
+  "keywords": {
+   "ring": "sistema",
+   "value": "24",
+   "label": "horas"
+  }
+ },
+ "12": {
+  "type": "compare",
+  "a": {
+   "icon": "chat",
+   "label": "LISTA"
+  },
+  "b": {
+   "icon": "site",
+   "label": "PAINEL"
+  },
+  "keywords": {
+   "a": "lista",
+   "arrow": "virou",
+   "b": "painel"
+  }
+ },
+ "13": {
+  "type": "camera",
+  "move": "pull",
+  "keyword": "MUDA",
+  "keywords": {
+   "text": "isso",
+   "keyword": "muda"
+  }
+ },
+ "14": {
+  "type": "duo",
+  "title": "O MESMO QUADRO",
+  "a": {
+   "image": "exemplo-a",
+   "label": "MANHÃ"
+  },
+  "b": {
+   "image": "exemplo-b",
+   "label": "TARDE"
+  },
+  "keywords": {
+   "title": "dividem",
+   "a": "manhã",
+   "b": "tarde"
+  }
+ },
+ "15": {
+  "type": "logo",
+  "logo": "simbolo",
+  "name": "SUA MARCA",
+  "keywords": {
+   "logo": "tudo",
+   "name": "sua"
+  }
+ },
+ "16": {
+  "type": "image",
+  "image": "exemplo-a",
+  "text": [
+   "IDENTIDADE DE SEMPRE"
+  ],
+  "keywords": {
+   "text": "identidade"
+  }
+ },
+ "17": {
+  "type": "morph",
+  "title": "A MESMA BASE",
+  "logo": "simbolo",
+  "keywords": {
+   "title": "mesma",
+   "morph": "pode"
+  }
+ },
+ "18": {
+  "type": "orbit",
+  "center": "simbolo",
+  "pre": "ASSISTENTE",
+  "word": "DISPONÍVEL",
+  "keywords": {
+   "center": 0.05,
+   "pre": "assistente",
+   "word": "disponível"
+  }
+ },
+ "19": {
+  "type": "camera",
+  "move": "punch",
+  "keyword": "ETAPA",
+  "keywords": {
+   "text": "você",
+   "punch": "etapa",
+   "keyword": "etapa"
+  }
+ },
+ "20": {
+  "type": "progress",
+  "title": "INSTALA UMA VEZ",
+  "file": "TAREFAS.CSV",
+  "busyLabel": "INSTALANDO",
+  "doneLabel": "FUNCIONANDO",
+  "keywords": {
+   "title": "instala",
+   "start": "uma",
+   "done": "e"
+  }
+ },
+ "21": {
+  "type": "strike",
+  "from": "RETRABALHO",
+  "to": "SEMANA LIVRE",
+  "stamp": true,
+  "icon": "clock",
+  "keywords": {
+   "from": 0.02,
+   "strike": "some",
+   "to": "da"
+  }
+ },
+ "22": {
+  "type": "image",
+  "image": "exemplo-b",
+  "text": [
+   "RESULTADO NO RELATÓRIO"
+  ],
+  "keywords": {
+   "text": "resultado"
+  }
+ },
+ "23": {
+  "type": "tiles",
+  "items": [
+   {
+    "label": "SITE",
+    "icon": "site",
+    "cue": "si"
+   },
+   {
+    "label": "VÍDEO",
+    "icon": "video",
+    "cue": "vi",
+    "color": "coral"
+   },
+   {
+    "label": "MENSAGEM",
+    "icon": "chat",
+    "cue": "me"
+   }
+  ],
+  "keywords": {
+   "si": "canais",
+   "vi": "vídeo",
+   "me": "e"
+  }
+ },
+ "24": {
+  "type": "typewriter",
+  "text": [
+   "PRIMEIRA TAREFA",
+   "HOJE"
+  ],
+  "window": "NOVA TAREFA",
+  "cps": 30,
+  "keywords": {
+   "type": 0.02
+  }
+ },
+ "25": {
+  "type": "camera",
+  "move": "punch",
+  "keyword": "AGORA",
+  "keywords": {
+   "text": "comece",
+   "punch": "agora",
+   "keyword": "agora"
+  }
+ }
+}

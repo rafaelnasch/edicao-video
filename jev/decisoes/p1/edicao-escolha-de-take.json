@@ -1,0 +1,22 @@
+{
+  "id": "edicao-escolha-de-take",
+  "version": "1",
+  "situacao": "futura: fica para o próximo ciclo (P1); o scripts/jev_decidir.py recusa este id até ela voltar para jev/decisoes/",
+  "titulo": "Escolher o melhor take quando o cliente gravou a mesma frase mais de uma vez",
+  "quando_usar": "No passo 2 (áudio e texto), antes de marcar os cortes de retake (--corte). O agente descreve cada take a partir da transcrição e da contact sheet: se completa a frase, tropeços, olhar, energia, duração.",
+  "fontes": [
+    "SKILL.md, passo 2 (repetições e gaguejos saem antes do recuo)"
+  ],
+  "inputs": {
+    "frase_alvo": "O que a frase precisa dizer.",
+    "takes": "Lista de 2 a 12 takes, cada um descrito em uma linha objetiva."
+  },
+  "state": "Regra de take: vence o que diz a frase inteira sem tropeço, olhando para a câmera, com energia igual ou maior; em empate, o mais curto. Take que muda o sentido da frase (troca número, nega o que devia afirmar) é eliminado.\n\nFrase alvo: {{frase_alvo}}. Takes: {{takes}}.",
+  "questions": {
+    "take": {
+      "type": "choice",
+      "instructions": "Qual take deve ficar no vídeo?",
+      "criteria": "@takes"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{"versao":1,"status":"proposto","aprovado_por":"","aprovado_em":"",
+ "origem":["05-videos/AAAA-MM-DD-a"],"estilo_base":"editorial","formato":"9:16","perfil":"reels",
+ "velocidade":1.3,"legenda":{"modo":"legenda-destaque","corpo":72},
+ "transicoes_permitidas":["corte seco","whip pan horizontal"],"sfx_nivel_db":-25,
+ "cenas_preferidas":["camera","image","list"],"criterios":["elemento novo a cada 2 s ou menos"]}

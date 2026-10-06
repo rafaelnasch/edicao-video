@@ -1,0 +1,88 @@
+{
+ "_leia": "Grafias neutras do estilo editorial (siglas e nomes de plataforma de uso geral): usadas por scripts/build_full.py na caixa de frase dos textos de exibição (o termo volta com a grafia daqui) e por scripts/revisar_transcricao.py --tema editorial. Mesmo formato de references/dicionario.json. Nomes da empresa, de produtos e de pessoas ficam no dicionário do kit de marca (01-marca/dicionario.json), que o build_full.py --marca soma a este. 'IA' fica no references/dicionario.json, que exige contexto (o verbo 'ia' é palavra comum).",
+ "versao": 1,
+ "termos": [
+  {
+   "grafia": "CRM",
+   "variantes": [
+    "crm",
+    "c r m"
+   ]
+  },
+  {
+   "grafia": "ROI",
+   "variantes": [
+    "roi"
+   ]
+  },
+  {
+   "grafia": "CAC",
+   "variantes": [
+    "cac"
+   ]
+  },
+  {
+   "grafia": "LTV",
+   "variantes": [
+    "ltv"
+   ]
+  },
+  {
+   "grafia": "MRR",
+   "variantes": [
+    "mrr"
+   ]
+  },
+  {
+   "grafia": "B2B",
+   "variantes": [
+    "b2b",
+    "b to b"
+   ]
+  },
+  {
+   "grafia": "PME",
+   "variantes": [
+    "pme"
+   ]
+  },
+  {
+   "grafia": "WhatsApp",
+   "variantes": [
+    "whatsapp",
+    "whats app"
+   ]
+  },
+  {
+   "grafia": "Instagram",
+   "variantes": [
+    "instagram"
+   ]
+  },
+  {
+   "grafia": "LinkedIn",
+   "variantes": [
+    "linkedin",
+    "linked in"
+   ]
+  },
+  {
+   "grafia": "YouTube",
+   "variantes": [
+    "youtube"
+   ]
+  },
+  {
+   "grafia": "Google",
+   "variantes": [
+    "google"
+   ]
+  },
+  {
+   "grafia": "Brasil",
+   "variantes": [
+    "brasil"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "nome": "circuito-dissolvido",
+ "titulo": "Circuito Dissolvido (estilo 17485)",
+ "descricao": "Dupla exposição fria em fundo branco gelo high-key: o que está na tela se desfaz em placa de circuito impresso luminosa (trilhas finas com dobras de 90 e 45 graus até pads e vias, chips retangulares acendendo), pixels quadrados se soltando e flutuando, respingos e bolinhas ciano e marinho, manchas aquareladas florescendo, escorridos verticais descendo da base. Calmo, contemplativo, cerebral: a mente de uma IA em silêncio. Paleta quase monocromática ciano e marinho com um único acento âmbar.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/circuito-dissolvido/engine (tema.css, tema.js, placa.js, cenas-a.js, cenas-b.js, transicoes.js) por cima de scripts/engine/src",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "cores": {
+  "gelo": "#F2F7F9",
+  "branco": "#FFFFFF",
+  "ciano": "#2EC4D6",
+  "cianoClaro": "#5FE0EA",
+  "petroleo": "#1C6E8C",
+  "marinho": "#0B2238",
+  "aco": "#3D6A8F",
+  "ambar": "#C9A45C",
+  "nevoa": "#D5E6EC",
+  "trilhaFundo": "#C6DCE4"
+ },
+ "fontes": {
+  "display": "themes/circuito-dissolvido/fonts/Sora-VariableFont_wght.ttf (Sora, OFL 1.1, pesos 100 a 800)",
+  "origem": "github.com/google/fonts (ofl/sora), baixada em 24/09/2026"
+ },
+ "materiais": [
+  "fundo branco gelo com trilhas de circuito tênues em cache",
+  "trilha de circuito com dobras de 90 e 45 graus, pad redondo e via",
+  "chip retangular marinho com pinos, acende em ciano (2 ou 3 em âmbar)",
+  "bloom ciano pequeno por forma sólida com blur",
+  "pixel quadrado se soltando e flutuando",
+  "respingos e bolinhas ciano e marinho",
+  "mancha aquarelada por formas sólidas translúcidas com blur",
+  "escorrido vertical fino com gota na ponta",
+  "granulação leve em pontos sólidos"
+ ],
+ "legenda": "texto marinho Sora 700 sobre faixa branca translúcida de opacidade única com pads nas pontas, centralizada na faixa da legenda do formato (9:16: y 1375); palavra atual em ciano petróleo com sublinhado de trilha ciano; palavra de número em âmbar",
+ "camera": "o vídeo ocupa o quadro e a borda de trás (lado e topo, longe do rosto) se desfaz em pixels quadrados reais do vídeo que se soltam, trilhas de circuito crescendo por cima do branco, respingos e escorridos na base; punch com anel de circuito e pixels soltos; rosto sempre intacto pela âncora",
+ "transicoes": {
+  "whip": "varredura de pixels na direção pedida",
+  "zoom": "mergulho no chip central",
+  "iris": "abertura em quadrado de pixels a partir do centro",
+  "slice": "faixas de placa deslizando",
+  "glitch": "dissolução em pixels que se reorganizam",
+  "flash": "clarão branco gelo com trilhas acendendo",
+  "slide": "painel deslizando com borda de trilha",
+  "wipe": "frente de dissolução em pixels passando"
+ },
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/circuito-dissolvido/prompts.py",
+  "referencias": "estilo pelo texto de prompts.py e scripts/elenco.py (elenco do projeto)"
+ },
+ "qa_estilo": "TEMA CIRCUITO DISSOLVIDO: NÃO é defeito: fundo branco gelo, borda do vídeo e das imagens se desfazendo em pixels quadrados e trilhas de circuito, bolinhas e respingos ciano e marinho, manchas aquareladas desfocadas, escorridos verticais, brilho ciano pequeno nos pads, paleta quase monocromática com um acento âmbar, legenda marinho sobre faixa branca. É defeito: degradê, emoji, dissolução comendo o rosto, texto cortado ou ilegível no fundo claro, letra dentro das ilustrações geradas."
+}

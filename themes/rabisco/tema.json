@@ -1,0 +1,63 @@
+{
+ "nome": "rabisco",
+ "titulo": "Rabisco (página de caderno a caneta)",
+ "descricao": "Papel sobre a mesa: caderno pautado ou quadriculado creme, caneta esferográfica azul, caneta vermelha para corrigir e circular, marca-texto amarelo, fita adesiva, papelão kraft, carimbo, uma lâmpada só no alto à esquerda. Tudo se mexe aos quadros (stop-motion 12 a 15 qps, traço que ferve em ciclo de 3 sementes). Fonte do estilo: manual de referência do estilo rabisco (fora da skill).",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/rabisco/engine (tema.css, tema.js, tinta.js, cenas-a.js, cenas-b.js, transicoes.js) por cima de scripts/engine/src",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "cores": {
+  "papel": "#f6f1e2",
+  "folha": "#faf8ee",
+  "recorte": "#fdfbf6",
+  "verso": "#ece6d6",
+  "tinta": "#13239f",
+  "tinta2": "#314996",
+  "vermelho": "#bc3233",
+  "lapis": "#555b66",
+  "tintaKraft": "#132548",
+  "marca": "#fdd137",
+  "kraft": "#c09c71",
+  "fita": "rgba(232,223,202,.82)",
+  "margem": "#e29b9d",
+  "pauta": "#6586c3",
+  "sombra": "rgba(35,17,3,alfa)"
+ },
+ "fontes": {
+  "mao": "themes/rabisco/fonts/PatrickHand-Regular.ttf (Patrick Hand, OFL 1.1)",
+  "nota": "themes/rabisco/fonts/Caveat-VariableFont_wght.ttf (Caveat, OFL 1.1)",
+  "origem": "github.com/google/fonts (ofl/patrickhand, ofl/caveat), baixadas em 24/09/2026"
+ },
+ "materiais": [
+  "pauta a cada 5,4% do lado menor, traços sólidos 2 px com opacidade .27 a .38, margem vermelha dupla, furos",
+  "quadriculado com linhas .24",
+  "papelão kraft com fibras e grão",
+  "grão do papel em pontos sólidos",
+  "fita adesiva translúcida com pontas picotadas",
+  "recorte com borda rasgada e sombra dura",
+  "marca-texto em trapézio com dois riscos claros",
+  "hachura de três traços (volume do letreiro)",
+  "carimbo de borda dupla com tinta falhada",
+  "aviãozinho de papel"
+ ],
+ "legenda": "tira de papel rasgada centralizada na faixa da legenda do formato (9:16: y 1375; 16:9: y 930), Patrick Hand em tinta azul, palavra atual com marca-texto amarelo passando, palavras futuras em grafite",
+ "camera": "o vídeo entra como foto colada com fita na página pautada, rosto preservado pela âncora, punch em degraus com marcas de impacto a caneta",
+ "transicoes": {
+  "whip": "página virando",
+  "zoom": "foto caindo e colando",
+  "iris": "furo rasgado com contorno vermelho",
+  "slice": "tiras de papel rasgado",
+  "glitch": "folha rasgando ao meio",
+  "flash": "clarão de papel",
+  "slide": "folha deslizando com sombra dura",
+  "wipe": "marca-texto passando"
+ },
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/rabisco/prompts.py",
+  "referencias": "estilo pelo texto de prompts.py e scripts/elenco.py (elenco do projeto)"
+ },
+ "qa_estilo": "TEMA RABISCO: o vídeo imita página de caderno a caneta. NÃO é defeito: papel creme pautado ou quadriculado, margem vermelha, traço de caneta tremendo ou fervendo aos quadros (stop-motion proposital), movimento em degraus, vídeo da pessoa como foto colada com fita e levemente girada, marca-texto amarelo, carimbo vermelho girado, letra à mão (Patrick Hand e Caveat), legenda em tira de papel com a palavra atual marcada em amarelo, transição de página virando ou folha rasgando. É defeito: gradiente, emoji, fonte digital sem cara de mão, texto cortado, rosto coberto, letra dentro das ilustrações geradas."
+}

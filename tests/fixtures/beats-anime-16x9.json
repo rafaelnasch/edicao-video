@@ -1,0 +1,278 @@
+{
+ "schema": "edicao-video-padrao/beats@1",
+ "video": "regressao",
+ "fonte": "@FIXTURES@/fala-16x9.mp4",
+ "transcricao": "@FIXTURES@/transcript.json",
+ "duracaoFala1x": 9.1,
+ "velocidadeFinal": 1.3,
+ "duracaoFinal": 7.0,
+ "canvas": {
+  "w": 1920,
+  "h": 1080
+ },
+ "zonaSegura": {
+  "texto": {
+   "x": 214,
+   "y": 120,
+   "w": 1492,
+   "h": 740
+  },
+  "proibido": [
+   {
+    "nome": "legenda",
+    "y0": 880,
+    "y1": 1080
+   }
+  ],
+  "legenda": {
+   "x": 214,
+   "y": 880,
+   "w": 1492,
+   "h": 100,
+   "align": "center",
+   "maxLinhas": 1
+  }
+ },
+ "paleta": {
+  "navy": "#0A1428",
+  "coral": "#E63946",
+  "cyan": "#06B6D4",
+  "dourado": "pontual"
+ },
+ "regras": [
+  "texto centralizado em x 214..1706, y 120..860",
+  "legenda karaokê y 880..980",
+  "sem gradiente",
+  "números só os citados na fala",
+  "logos só de assets oficiais",
+  "tempos em segundos da fala 1x; startFinal/endFinal já divididos pela velocidade"
+ ],
+ "resumo": {
+  "beats": 5,
+  "porTipo": {
+   "camera": 2,
+   "imagem": 2,
+   "animacao": 1
+  },
+  "mediaFinalSeg": 1.4,
+  "maiorFinalSeg": 1.554,
+  "menorFinalSeg": 1.231
+ },
+ "validacao": {
+  "erros": [],
+  "avisos": []
+ },
+ "beats": [
+  {
+   "id": 1,
+   "start": 0.0,
+   "end": 1.76,
+   "duracao1x": 1.76,
+   "startFinal": 0.0,
+   "endFinal": 1.354,
+   "duracaoFinal": 1.354,
+   "tipo": "camera",
+   "fala": "Hoje eu vou mostrar como um",
+   "animacao": "teste de fumaça",
+   "textoTela": "HOJE EU VOU",
+   "posicaoTexto": {
+    "x": 214,
+    "y": 750,
+    "w": 1492,
+    "h": 100,
+    "align": "center",
+    "maxLinhas": 1,
+    "nota": "motor posiciona pelo rosto: abaixo do queixo, ou ao lado dele na paisagem"
+   },
+   "sfx": {
+    "nome": "whoosh",
+    "arquivo": "whoosh-short",
+    "noInicio": true
+   },
+   "transicaoEntrada": "corte seco",
+   "camera": {
+    "movimento": "punch",
+    "zoomDe": 1.0,
+    "zoomPara": 1.12,
+    "ancora": {
+     "x": 540,
+     "y": 620
+    }
+   }
+  },
+  {
+   "id": 2,
+   "start": 1.76,
+   "end": 3.58,
+   "duracao1x": 1.82,
+   "startFinal": 1.354,
+   "endFinal": 2.754,
+   "duracaoFinal": 1.4,
+   "tipo": "imagem",
+   "fala": "vídeo curto ganha ritmo com",
+   "animacao": "teste de fumaça",
+   "textoTela": "VÍDEO CURTO GANHA",
+   "posicaoTexto": {
+    "x": 214,
+    "y": 120,
+    "w": 1492,
+    "h": 220,
+    "align": "center",
+    "maxLinhas": 2,
+    "nota": "topo da zona; textoBaixo desce para o fim da zona"
+   },
+   "sfx": {
+    "nome": "whoosh",
+    "arquivo": "whoosh-short",
+    "noInicio": true
+   },
+   "transicaoEntrada": "whip pan horizontal",
+   "imagem": {
+    "arquivo": "@FIXTURES@/imagens/quadro-a.png",
+    "existe": true,
+    "tratamento": {
+     "escala": [
+      1.0,
+      1.05
+     ],
+     "cobre": "tela cheia 1920x1080"
+    }
+   }
+  },
+  {
+   "id": 3,
+   "start": 3.58,
+   "end": 5.48,
+   "duracao1x": 1.9,
+   "startFinal": 2.754,
+   "endFinal": 4.215,
+   "duracaoFinal": 1.462,
+   "tipo": "animacao",
+   "fala": "cortes secos, imagens que se",
+   "animacao": "teste de fumaça",
+   "textoTela": "CORTES IMAGENS",
+   "posicaoTexto": {
+    "x": 214,
+    "y": 120,
+    "w": 1492,
+    "h": 740,
+    "align": "center",
+    "nota": "grupos arrumados na zona pelo motor (paisagem)"
+   },
+   "sfx": {
+    "nome": "pop",
+    "arquivo": "pop",
+    "noInicio": true
+   },
+   "transicaoEntrada": "máscara circular"
+  },
+  {
+   "id": 4,
+   "start": 5.48,
+   "end": 7.5,
+   "duracao1x": 2.02,
+   "startFinal": 4.215,
+   "endFinal": 5.769,
+   "duracaoFinal": 1.554,
+   "tipo": "imagem",
+   "fala": "mexem e uma legenda que acompanha",
+   "animacao": "teste de fumaça",
+   "textoTela": "MEXEM E UMA",
+   "posicaoTexto": {
+    "x": 214,
+    "y": 120,
+    "w": 1492,
+    "h": 220,
+    "align": "center",
+    "maxLinhas": 2,
+    "nota": "topo da zona; textoBaixo desce para o fim da zona"
+   },
+   "sfx": {
+    "nome": "whoosh",
+    "arquivo": "whoosh-short",
+    "noInicio": true
+   },
+   "transicaoEntrada": "zoom through",
+   "imagem": {
+    "arquivo": "@FIXTURES@/imagens/quadro-b.png",
+    "existe": true,
+    "tratamento": {
+     "escala": [
+      1.0,
+      1.05
+     ],
+     "cobre": "tela cheia 1920x1080"
+    }
+   }
+  },
+  {
+   "id": 5,
+   "start": 7.5,
+   "end": 9.1,
+   "duracao1x": 1.6,
+   "startFinal": 5.769,
+   "endFinal": 7.0,
+   "duracaoFinal": 1.231,
+   "tipo": "camera",
+   "fala": "cada palavra até o final.",
+   "animacao": "teste de fumaça",
+   "textoTela": "CADA PALAVRA ATÉ",
+   "posicaoTexto": {
+    "x": 214,
+    "y": 750,
+    "w": 1492,
+    "h": 100,
+    "align": "center",
+    "maxLinhas": 1,
+    "nota": "motor posiciona pelo rosto: abaixo do queixo, ou ao lado dele na paisagem"
+   },
+   "sfx": {
+    "nome": "pop",
+    "arquivo": "pop",
+    "noInicio": true
+   },
+   "transicaoEntrada": "corte seco com flash branco de 2 frames",
+   "camera": {
+    "movimento": "punch",
+    "zoomDe": 1.0,
+    "zoomPara": 1.12,
+    "ancora": {
+     "x": 540,
+     "y": 620
+    }
+   }
+  }
+ ],
+ "temaVisual": "anime",
+ "formato": "16:9",
+ "formatoOrigem": "detectado da fonte 1920x1080 rotação 0",
+ "layout": {
+  "formato": "16:9",
+  "canvas": {
+   "w": 1920,
+   "h": 1080
+  },
+  "identidade": false,
+  "zonaSegura": {
+   "x0": 214,
+   "x1": 1706,
+   "y0": 120,
+   "y1": 860
+  },
+  "legenda": {
+   "y0": 880,
+   "y1": 980,
+   "centro": 930,
+   "limite": 980,
+   "larguraMax": 1300,
+   "corpo": 50
+  },
+  "composicao": {
+   "x0": 214,
+   "x1": 1706,
+   "y0": 120,
+   "y1": 860
+  },
+  "orientacao": "paisagem"
+ }
+}

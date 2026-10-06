@@ -1,0 +1,30 @@
+{
+  "id": "edicao-recurso-do-beat",
+  "version": "1",
+  "situacao": "futura: fica para o próximo ciclo (P1); o scripts/jev_decidir.py recusa este id até ela voltar para jev/decisoes/",
+  "titulo": "Escolher câmera, imagem gerada, animação ou recurso do cliente para um beat",
+  "quando_usar": "No passo 4 (direção), só nos beats em que o tipo não é óbvio pela regra (opinião e CTA na câmera, metáfora em imagem, número e lista em animação). Até 16 beats podem ir na mesma chamada, montada pelo wrapper da skill com uma pergunta por beat.",
+  "fontes": [
+    "SKILL.md, passo 4 (critérios que funcionaram)",
+    "2-recursos/ do vídeo e 04-acervo/MAPA.md da empresa (recursos visuais disponíveis)"
+  ],
+  "inputs": {
+    "frase": "Frase falada no beat, sem nome de pessoa.",
+    "anterior": "Tipo dos dois beats anteriores (ex.: 'camera, imagem').",
+    "recursos_cliente": "Resumo dos recursos do cliente que poderiam servir (ex.: 'foto da fachada; print do painel'), ou 'nenhum'."
+  },
+  "state": "Regra de alternância: câmera em opinião, gancho e chamada para ação; imagem gerada em metáfora e cena; animação em número, marca, lista e comparação, com cada item entrando na palavra falada; recurso do cliente (foto, print, vídeo de apoio) quando ele mostra literalmente o que a frase diz, porque prova vale mais que ilustração. Nunca três beats iguais seguidos.\n\nFrase do beat: {{frase}}. Tipos dos dois beats anteriores: {{anterior}}. Recursos do cliente disponíveis: {{recursos_cliente}}.",
+  "questions": {
+    "recurso": {
+      "type": "choice",
+      "instructions": "Qual tipo de recurso este beat deve usar, respeitando a alternância?",
+      "criteria": {
+        "camera": "Rosto na câmera.",
+        "imagem": "Imagem gerada sem texto.",
+        "animacao": "Animação de número, lista, marca ou comparação.",
+        "recurso_cliente": "Foto, print ou vídeo de apoio enviado pelo cliente.",
+        "nao_da": "A frase é curta ou vaga demais para decidir."
+      }
+    }
+  }
+}

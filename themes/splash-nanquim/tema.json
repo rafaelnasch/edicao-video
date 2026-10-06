@@ -1,0 +1,55 @@
+{
+ "nome": "splash-nanquim",
+ "titulo": "Splash de Nanquim (estilo 17480)",
+ "descricao": "Splash art de jogo de luta: personagem 3D colorido e nítido contra caos monocromático de nanquim sépia. Pergaminho e cinza quente, nanquim preto, branco-giz; toda cor saturada mora no personagem (vermelho, azul, pele). Explosões de nanquim por formas sólidas, respingos e gotas voando em diagonal, pinceladas secas que se desenham com rastro, arranhões brancos, linhas de velocidade, títulos batendo com borrifo, transições por golpe de pincel e mancha que cobre a tela, câmera com tremor de impacto.",
+ "formatos": [
+  "qualquer"
+ ],
+ "motor": "themes/splash-nanquim/engine (tema.css, tema.js, tinta.js, cenas-a.js, cenas-b.js, transicoes.js) por cima de scripts/engine/src",
+ "aceita_marca": "parcial",
+ "capacidades": [],
+ "cores": {
+  "pergaminho": "#E6DCCB",
+  "areia": "#CBB89A",
+  "taupe": "#8C7F6E",
+  "cinzaQuente": "#5B544B",
+  "nanquim": "#111111",
+  "giz": "#F2EFE9",
+  "vermelho": "#C8201E",
+  "azul": "#2E4F9E",
+  "pele": "#E8B08A",
+  "ouro": "#D9A441"
+ },
+ "fontes": {
+  "impacto": "themes/splash-nanquim/fonts/Bangers-Regular.ttf (Bangers, OFL 1.1): títulos, números, placas e legenda",
+  "pincel": "themes/splash-nanquim/fonts/Knewave-Regular.ttf (Knewave, OFL 1.1): reserva de pincel",
+  "origem": "github.com/google/fonts (ofl/bangers, ofl/knewave), baixadas em 24/09/2026"
+ },
+ "materiais": [
+  "pergaminho com grão de papel em pontos sólidos",
+  "pincelada seca em cerdas (feixe de traços sólidos)",
+  "explosão de nanquim por formas sólidas com gotas satélite",
+  "respingos e gotas em diagonal",
+  "arranhões brancos sobre o preto",
+  "linhas de velocidade em nanquim",
+  "crosta de tinta nas bordas da câmera"
+ ],
+ "legenda": "faixa de pergaminho de borda comida por pincel, centralizada na faixa da legenda do formato (9:16: y 1375), texto em nanquim, palavra ativa em vermelho #C8201E com borrifo, palavras futuras em taupe",
+ "camera": "vídeo com bordas comidas por pinceladas e respingos (máscara de pincel só nas margens, rosto sempre limpo), punch com tremor de impacto e borrifo de nanquim; placa de texto em faixa de nanquim com palavra-chave vermelha",
+ "transicoes": {
+  "whip": "golpe de pincel diagonal com linhas de velocidade",
+  "zoom": "explosão de nanquim que cobre e abre",
+  "iris": "mancha de tinta crescendo",
+  "slice": "pinceladas em faixas",
+  "glitch": "respingo que racha a tela",
+  "flash": "clarão de giz com tremor",
+  "slide": "empurrão com rastro de pincel",
+  "wipe": "pincelada larga passando"
+ },
+ "imagens": {
+  "fornecedor": "escolha da empresa (empresa.json, imagem.fornecedor; padrão nenhuma)",
+  "prompts": "themes/splash-nanquim/prompts.py",
+  "referencias": "estilo pelo texto de prompts.py e scripts/elenco.py (elenco do projeto)"
+ },
+ "qa_estilo": "TEMA SPLASH DE NANQUIM: NÃO é defeito: fundo sépia e pergaminho, manchas e respingos pretos grandes, pinceladas diagonais, arranhões brancos, linhas de velocidade, bordas da câmera comidas por tinta, tremor de câmera nos impactos, tinta invadindo o personagem nas imagens, cor saturada só no personagem. É defeito: degradê, emoji, texto cortado, tinta sobre o rosto na câmera, letra ou número dentro das imagens geradas, legenda ilegível."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "edicao-tema-pela-marca",
+  "version": "1",
+  "situacao": "futura: fica para o próximo ciclo (P1); o scripts/jev_decidir.py recusa este id até ela voltar para jev/decisoes/",
+  "titulo": "Escolher o tema visual que mais combina com a marca do cliente",
+  "quando_usar": "No passo 0, quando marca.json não fixa estilo_base ou o padrão não existe. O agente resume marca.md em texto (sem nome de pessoa, sem link) e monta a lista de temas candidatos a partir de themes/*/tema.json. Resposta de faixa média ou baixa: perguntar ao dono do vídeo.",
+  "fontes": [
+    "SKILL.md da skill (passos 0, 4 e 6) e themes/*/tema.json",
+    "MAPA.md e 01-marca/marca.md da empresa (resumidos pelo agente)"
+  ],
+  "inputs": {
+    "resumo_marca": "Resumo de marca.md: tom de voz, paleta com nome das cores, tipografia, o que a marca proíbe, em até 6 linhas.",
+    "nicho": "Nicho e público do cliente (ex.: advocacia para empresas; clínica de estética; escola de educação a distância).",
+    "plataforma": "Onde o vídeo vai rodar e o objetivo (ex.: Reels orgânico para atrair; anúncio de captação; aula no YouTube).",
+    "temas_candidatos": "Lista de 2 a 12 temas, cada um com uma linha de estilo, cores dominantes e energia."
+  },
+  "state": "Regra de escolha de tema da skill de edição. O tema muda só a pele do vídeo (cores, tipografia, imagens, animações); o método de corte e ritmo é o mesmo. Escolha o tema cuja paleta, energia e materiais NÃO contradizem a marca e servem ao nicho. Contradição eliminatória: tema com cor dominante que a marca proíbe; tema lúdico (anime, rabisco, splash) para nicho regulado ou sóbrio (advocacia, saúde, finanças) quando a marca pede seriedade; tema escuro e neon quando a marca pede claro e acolhedor. Empate: prefira o estilo editorial.\n\nMarca: {{resumo_marca}}. Nicho e público: {{nicho}}. Plataforma e objetivo: {{plataforma}}. Temas candidatos: {{temas_candidatos}}.",
+  "questions": {
+    "marca_pede_sobriedade": {
+      "type": "noul",
+      "instructions": "A marca e o nicho descritos pedem um vídeo sóbrio (sem efeitos lúdicos, tremor, faísca ou humor visual)?",
+      "criteria": {
+        "true": "Marca ou nicho pedem sobriedade.",
+        "false": "Marca e nicho aceitam energia e efeitos."
+      }
+    },
+    "tema": {
+      "type": "choice",
+      "instructions": "Qual tema candidato combina melhor com a marca, o nicho e a plataforma, sem nenhuma contradição eliminatória?",
+      "criteria": "@temas_candidatos"
+    }
+  }
+}

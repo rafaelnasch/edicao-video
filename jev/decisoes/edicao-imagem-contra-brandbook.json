@@ -1,0 +1,47 @@
+{
+  "id": "edicao-imagem-contra-brandbook",
+  "version": "1",
+  "titulo": "Aprovar, refazer ou trocar uma imagem gerada, conferida contra a marca (marca.md e marca.json)",
+  "quando_usar": "No passo 6 (imagens), depois que o agente olhou a imagem e escreveu um laudo objetivo em texto: cores dominantes, se há letra, número, logo ou marca de terceiro, rosto e mãos, estilo. O JEV não vê a imagem; julga o laudo contra as regras. Letra, número ou logo de terceiro reprova sempre, com ou sem JEV. Em nicho regulado, a imagem também pede o OK do cliente no relatório.",
+  "fontes": [
+    "SKILL.md, passo 6, e scripts/conferir_imagens.py",
+    "01-marca/marca.md e 01-marca/marca.json da empresa (paleta e proibições visuais, resumidas pelo agente)"
+  ],
+  "inputs": {
+    "regras_visuais": "Resumo das regras visuais de marca.md e marca.json: paleta permitida, cores proibidas, estilo de foto, o que nunca aparece.",
+    "laudo": "Laudo objetivo da imagem escrito pelo agente depois de olhá-la.",
+    "funcao": "O que a imagem precisa comunicar no beat, em uma linha."
+  },
+  "state": "Regra de imagem: sem texto, sem número, sem logo ou marca de terceiro, mãos e rosto corretos, paleta dentro da marca, estilo do tema, e a imagem comunica a função do beat.\n\nRegras visuais da marca: {{regras_visuais}}. Laudo da imagem: {{laudo}}. Função no beat: {{funcao}}.",
+  "questions": {
+    "defeito_eliminatorio": {
+      "type": "noul",
+      "instructions": "O laudo descreve algum defeito eliminatório: letra, número, logo de terceiro, mão ou rosto deformado, cor proibida pela marca?",
+      "criteria": {
+        "true": "Há defeito eliminatório.",
+        "false": "Nenhum defeito eliminatório descrito."
+      }
+    },
+    "aderencia": {
+      "type": "score",
+      "instructions": "Quanto a imagem descrita adere à marca e comunica a função do beat?",
+      "criteria": [
+        "Contradiz a marca ou não comunica a função.",
+        "Comunica, mas fora da paleta ou do estilo.",
+        "Adequada, com um desvio menor.",
+        "Dentro da marca e comunica bem.",
+        "Exemplar: poderia ilustrar o próprio marca.md."
+      ]
+    },
+    "veredito": {
+      "type": "choice",
+      "instructions": "O que fazer com a imagem?",
+      "criteria": {
+        "aprovar": "Entra no vídeo como está.",
+        "refazer": "Gerar de novo com o prompt corrigido.",
+        "trocar_por_animacao": "A função é melhor servida por animação ou recurso do cliente.",
+        "nao_da": "O laudo não basta para decidir."
+      }
+    }
+  }
+}
